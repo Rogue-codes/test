@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from "../assets/logo.png"
 import shape from '../assets/backgroundshape.png'
-import background from '../assets/background.png'
+import background from '../assets/rec.png'
 import book from '../assets/book1.png'
 import styled from 'styled-components'
 
@@ -54,7 +54,7 @@ position:relative;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    height:50vh;
+    height:80vh;
 }
 
 @media screen and (min-width:1025px) and (max-width:1200px) {}
