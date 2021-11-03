@@ -94,12 +94,29 @@ position:relative;
     justify-conter:center;
     align-item:center;
     flex-flow:row wrap;
+
+    @media (max-width: 480px) {
+        display:flex;
+        justify-conter:center;
+        align-item:center;
+        flex-direction:column;
+    }
+
+    @media screen and (min-width:481px) and (max-width:768px) {}
+
+    @media screen and (min-width:769px) and (max-width:1024px) {}
+
+    @media screen and (min-width:1025px) and (max-width:1200px) {}
+
+    @media screen and (min-width:1201px) and (max-width:1440px) {}
 }
 .left{
     // background-color:red;
     flex:6;
     justify-content:center;
-    @media (max-width: 480px) {}
+    @media (max-width: 480px) {
+        max-width:100%;
+    }
 
     @media screen and (min-width:481px) and (max-width:768px) {}
 
@@ -114,6 +131,14 @@ position:relative;
         height:4.25em;
         margin-left:2.25em;
         margin-top: 6.1em;
+
+        @media (max-width: 480px) {
+            width:20em;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 6.1em;
+
+        }
         h1{
             font-family: Montserrat;
             font-style: normal;
@@ -141,6 +166,14 @@ position:relative;
         margin-left:5.3em;
         margin-top:6.8em;
 
+        @media (max-width: 480px) {
+            width:25em;
+            height:auto;
+            margin-left:.1em;
+            margin-top: 6.1em;
+
+        }
+
         ul{
             list-style: none;
             
@@ -152,11 +185,22 @@ position:relative;
                 font-size: 18px;
                 line-height: 22px;
                 height:4.43em;
+
+                @media (max-width: 480px) {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 17px;
+                    line-height: 25.5px;
+                    height:4.43em;
+                    padding-top:2em;
+        
+                }
             }
         }
         li::before {
             content: "• ";
-            font-size:30px;
+            font-size:40px;
             color: rgba(205, 42, 68, 1);
             padding-right:.0em;
           }
@@ -166,6 +210,14 @@ position:relative;
         width:23.68em;
         margin-left:5em;
         height:auto;
+
+        @media (max-width: 480px) {
+            width:21em;
+            height:auto;
+            margin-left:1.5em;
+            margin-top: 6.1em;
+
+        }
         h3{
             font-family: Montserrat;
             font-style: normal;
@@ -173,11 +225,90 @@ position:relative;
             font-size: 16px;
             line-height: 150%;
             color: #524C4C;
+
+            @media (max-width: 480px) {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 150%;
+                color: #524C4C;
+    
+            }
         }
     }
 }
 .right{
     background-color:pink;
     flex:6;
+    
+    .price{
+        max-width:20.18em;
+            height:11.8em;
+            background-color:rgba(255, 231, 235, 1);
+            margin:auto;
+
+            .introductoryPrice{
+                max-width:13.25em;
+                margin:auto;
+                height:2.68em;
+
+                p{
+                    font-size:16px;
+                    font-family: 'Montserrat', sans-serif;
+                    line-height:26.64px;
+                    font-weight:700;
+                    color:rgba(246, 147, 164, 1);
+
+                    span{
+                        font-size: .75em;
+                        text-align:right;
+                        padding-left:2em
+                        
+                    }
+                }
+            }
+
+            .cash{
+                max-width:7.25em;
+                margin:auto;
+                height:2.75em;
+
+                h1{
+                    font-size:30px;
+                    font-family: 'Montserrat', sans-serif;
+                    line-height:44.4px;
+                    font-weight:800;
+                    color:rgba(200, 42, 69, 1);
+                }
+            }
+
+            .strike{
+                max-width:4.81em;
+                margin:auto;
+                height:1.68em;
+                font-size:18px;
+                font-family: 'Montserrat', sans-serif;
+                line-height:26.64px;
+                font-weight:800;
+                color:rgba(0, 0, 0, 1);
+            }
+
+            .priceGoesBack{
+                max-width:11.06em;
+                margin:auto;
+                height:2.12em;
+                
+                p{
+                    font-size:12px;
+                    font-family: 'Montserrat', sans-serif;
+                    line-height:16.62px;
+                    font-weight:700;
+                    color:rgba(0, 0, 0, 1);
+                }
+            }
+        }
+
+    }
 }
 `

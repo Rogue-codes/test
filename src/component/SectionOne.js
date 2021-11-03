@@ -44,7 +44,7 @@ const Styledone = styled.section`
 background:url(${background});
 // background-color:pink;
 width:100%;
-height:100vh;
+height:120vh;
 position:relative;
 
 @media (max-width: 480px) {}
