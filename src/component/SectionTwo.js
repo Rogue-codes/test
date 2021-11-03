@@ -167,6 +167,14 @@ position:relative;
         @media screen and (min-width:1025px) and (max-width:1200px) {
             margin-top: 3.1em;
         }
+
+        @media screen and (min-width:1441px) {
+            width:30em;
+            height:4.25em;
+            margin-left:1.25em;
+            margin-top: 1.1em;
+        }
+
         h1{
             font-family: Montserrat;
             font-style: normal;
@@ -185,7 +193,10 @@ position:relative;
 
         @media screen and (min-width:1025px) and (max-width:1200px) {}
 
-        @media screen and (min-width:1201px) and (max-width:1440px) {}  
+        @media screen and (min-width:1201px) and (max-width:1440px) {} 
+        @media screen and (min-width:1441px) {
+            font-size: 40px;
+        } 
     }
 
     .list{
@@ -217,6 +228,12 @@ position:relative;
         @media screen and (min-width:1025px) and (max-width:1200px) {
             margin-left: .15em;
             margin-top:4.8em;
+        }
+
+        @media screen and (min-width:1441px) {
+            margin-top:-4em;
+            width:50em;
+            margin-left: 2em;
         }
 
         ul{
@@ -274,6 +291,10 @@ position:relative;
             width:30em;
             margin-left: 1.15em;
             margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:1441px) {
+            width:50em;
         }
         h3{
             font-family: Montserrat;
