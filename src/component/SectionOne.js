@@ -49,9 +49,13 @@ position:relative;
 
 @media (max-width: 480px) {}
 
-@media screen and (min-width:481px) and (max-width:768px) {}
+@media screen and (min-width:481px) and (max-width:768px) {
+    height:50vh;
+}
 
-@media screen and (min-width:769px) and (max-width:1024px) {}
+@media screen and (min-width:769px) and (max-width:1024px) {
+    height:50vh;
+}
 
 @media screen and (min-width:1025px) and (max-width:1200px) {}
 
@@ -75,11 +79,41 @@ position:relative;
         }
     }
 
-    @media screen and (min-width:481px) and (max-width:768px) {}
+    @media screen and (min-width:481px) and (max-width:768px) {
+        height:20em;
+        width:20em;
+        margin-left:27.47em;
+        // margin-top:15em;
 
-    @media screen and (min-width:769px) and (max-width:1024px) {}
+        img{
+            height:100%;
+            width:100%
+        }
+    }
 
-    @media screen and (min-width:1025px) and (max-width:1200px) {}
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        height:25em;
+        width:25em;
+        margin-left:38.47em;
+        // margin-top:15em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+    @media screen and (min-width:1025px) and (max-width:1200px) {
+        height:28em;
+        width:28em;
+        margin-left:47em;
+        // margin-top:15em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
 
     @media screen and (min-width:1201px) and (max-width:1440px) {}
     
@@ -110,11 +144,44 @@ position:relative;
         }
     }
 
-    @media screen and (min-width:481px) and (max-width:768px) {}
+    @media screen and (min-width:481px) and (max-width:768px) {
+        height:15em;
+        width:20em;
+        background-color:golden;
+        margin-left:28em;
+        margin-top:-3em;
 
-    @media screen and (min-width:769px) and (max-width:1024px) {}
+        img{
+            height:100%;
+            width:100%
+        }
+    }
 
-    @media screen and (min-width:1025px) and (max-width:1200px) {}
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        height:25em;
+        width:28em;
+        background-color:golden;
+        margin-left:35em;
+        margin-top:-3em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+    @media screen and (min-width:1025px) and (max-width:1200px) {
+        height:27em;
+        width:32em;
+        background-color:golden;
+        margin-left:43em;
+        margin-top:-3em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
 
     @media screen and (min-width:1201px) and (max-width:1440px) {}
     
@@ -130,11 +197,17 @@ position:relative;
     @media (max-width: 480px) {
         max-width:100%;
     }
-    @media screen and (min-width:481px) and (max-width:768px) {}
+    @media screen and (min-width:481px) and (max-width:768px) {
+        max-width:100%;
+    }
 
-    @media screen and (min-width:769px) and (max-width:1024px) {}
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        max-width:100%;
+    }
 
-    @media screen and (min-width:1025px) and (max-width:1200px) {}
+    @media screen and (min-width:1025px) and (max-width:1200px) {
+        max-width:100%;
+    }
 
     @media screen and (min-width:1201px) and (max-width:1440px) {}
 
@@ -159,11 +232,38 @@ position:relative;
                 height:auto;
                 margin-left:1em;
             }
-            @media screen and (min-width:481px) and (max-width:768px) {}
+            @media screen and (min-width:481px) and (max-width:768px) {
+                font-size:22px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:800;
+                line-height:24.4px;
+                color:rgba(205, 42, 68, 1);
+                width:22em;
+                height:auto;
+                margin-left:1em;
+            }
 
-            @media screen and (min-width:769px) and (max-width:1024px) {}
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                font-size:25px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:800;
+                line-height:24.4px;
+                color:rgba(205, 42, 68, 1);
+                width:28em;
+                height:auto;
+                margin-left:1em;
+            }
         
-            @media screen and (min-width:1025px) and (max-width:1200px) {}
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                font-size:28px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:800;
+                line-height:44.4px;
+                color:rgba(205, 42, 68, 1);
+                width:30em;
+                height:auto;
+                margin-left:1em;
+            }
         
             @media screen and (min-width:1201px) and (max-width:1440px) {}
         }
@@ -185,11 +285,35 @@ position:relative;
                 height:auto;
                 margin-left:2em;
             }
-            @media screen and (min-width:481px) and (max-width:768px) {}
+            @media screen and (min-width:481px) and (max-width:768px) {
+                font-size:18px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:500;
+                line-height:24.4px;
+                width:24em;
+                height:auto;
+                margin-left:1em;
+            }
 
-            @media screen and (min-width:769px) and (max-width:1024px) {}
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                font-size:20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:500;
+                line-height:24.4px;
+                width:32em;
+                height:auto;
+                margin-left:1em;
+            }
         
-            @media screen and (min-width:1025px) and (max-width:1200px) {}
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                font-size:24px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:500;
+                line-height:28.4px;
+                width:33em;
+                height:auto;
+                margin-left:1em;
+            }
         
             @media screen and (min-width:1201px) and (max-width:1440px) {}
             
