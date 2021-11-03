@@ -444,6 +444,10 @@ position:relative;
                 width:100%
             }
         }
+
+        @media screen and (min-width:1441px) {
+            margin-top:-8em;
+        }
     
         @media screen and (min-width:1201px) and (max-width:1440px) {}
         

@@ -1,3 +1,4 @@
+import Footer from './component/Footer';
 import SectionOne from './component/SectionOne';
 import SectionTwo from './component/SectionTwo';
 
@@ -6,6 +7,7 @@ function App() {
     <div className="App">
       <SectionOne/>
       <SectionTwo/>
+      <Footer/>
     
     </div>
   );

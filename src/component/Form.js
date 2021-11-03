@@ -9,13 +9,13 @@ const Form = () => {
 
             <form action="">
             <label htmlFor="" className='nameLabel'>Name</label>
-            <input type="text" name='name' className='name' />
+            <input type="text" name='name' className='name' required />
 
             <label htmlFor="" className='emailLabel'>Email</label>
-            <input type="text" name='email' className='name'/>
+            <input type="text" name='email' className='name' required/>
 
             <label htmlFor="" className='phoneLabel'>Phone Number</label>
-            <input type="text" name='phoneNumber' className='name'  />
+            <input type="text" name='phoneNumber' className='name' required  />
 
             <button>SUBMIT</button>
 
