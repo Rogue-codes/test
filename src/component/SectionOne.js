@@ -89,6 +89,13 @@ position:relative;
     position:absolute;
     margin-left:38em;
     margin-top:-2em;
+    height:40em;
+    width:50em;
+
+    img{
+        height:100%;
+        width:100%
+    }
 
     @media (max-width: 480px) {
         height:15em;
