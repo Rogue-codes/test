@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import Form from './Form'
+import book from '../assets/book2.png'
 
 const SectionTwo = () => {
     return (
@@ -65,6 +67,12 @@ const SectionTwo = () => {
                         </div>
                     </div>
 
+                    <Form/>
+
+                    <div className="book">
+                        <img src={book} alt="" />
+                    </div>
+
                 </div>
             </div>
             
@@ -120,7 +128,9 @@ position:relative;
 
     @media screen and (min-width:481px) and (max-width:768px) {}
 
-    @media screen and (min-width:769px) and (max-width:1024px) {}
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        flex:6
+    }
 
     @media screen and (min-width:1025px) and (max-width:1200px) {}
 
@@ -138,6 +148,24 @@ position:relative;
             margin-left:1.15em;
             margin-top: 6.1em;
 
+        }
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            width:40em;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            width:30em;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:1025px) and (max-width:1200px) {
+            margin-top: 3.1em;
         }
         h1{
             font-family: Montserrat;
@@ -172,6 +200,23 @@ position:relative;
             margin-left:.1em;
             margin-top: 6.1em;
 
+        }
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            width:40em;
+            margin-left:1.15em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            width:30em;
+            margin-left: .15em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:1025px) and (max-width:1200px) {
+            margin-left: .15em;
+            margin-top:4.8em;
         }
 
         ul{
@@ -218,6 +263,18 @@ position:relative;
             margin-top: 6.1em;
 
         }
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            width:40em;
+            margin-left:1.15em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            width:30em;
+            margin-left: 1.15em;
+            margin-top: 3.1em;
+        }
         h3{
             font-family: Montserrat;
             font-style: normal;
@@ -239,7 +296,6 @@ position:relative;
     }
 }
 .right{
-    background-color:pink;
     flex:6;
     
     .price{
@@ -309,6 +365,67 @@ position:relative;
             }
         }
 
+    }
+
+    .book{
+        position:absolute;
+        margin-left:16em;
+        margin-top:-5.5em;
+        height:21.87em;
+        width:18.12em;
+    
+        img{
+            height:100%;
+            width:100%
+        }
+    
+        @media (max-width: 480px) {
+            background-color:golden;
+            margin-left: 4em;
+            margin-top:-6em;
+    
+            img{
+                height:100%;
+                width:100%
+            }
+        }
+    
+        @media screen and (min-width:481px) and (max-width:768px) {
+            background-color:golden;
+            margin-left:18em;
+            margin-top:-6em;
+    
+            img{
+                height:100%;
+                width:100%
+            }
+        }
+    
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            background-color:golden;
+            margin-left:3em;
+            margin-top:-6em;
+    
+            img{
+                height:100%;
+                width:100%
+            }
+        }
+    
+        @media screen and (min-width:1025px) and (max-width:1200px) {
+
+            background-color:golden;
+            margin-left:13em;
+            margin-top:-6em;
+    
+            img{
+                height:100%;
+                width:100%
+            }
+        }
+    
+        @media screen and (min-width:1201px) and (max-width:1440px) {}
+        
     }
 }
 `
