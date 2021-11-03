@@ -16,6 +16,10 @@ const SectionOne = () => {
                 <img src={shape} alt="" className='redshape' />
             </div>
 
+            <div className="picture">
+                <img src={book} alt="" />
+            </div>
+
             <div className="container">
                 <div className="left">
                     <h1>
@@ -28,13 +32,6 @@ const SectionOne = () => {
                         you will fast track your career growth in tech, increase your value, and make 
                         more money.
                     </p>
-                </div>
-
-
-                <div className="right">
-                    <div className="picture">
-                        <img src={book} alt="" />
-                    </div>
                 </div>
             </div>
         </Styledone>
@@ -66,7 +63,45 @@ position:relative;
     margin-left:38em;
     margin-top:-9em;
 
-    @media (max-width: 480px) {}
+    @media (max-width: 480px) {
+        height:10em;
+        width:10em;
+        margin-left:13.47em;
+        // margin-top:15em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+    @media screen and (min-width:481px) and (max-width:768px) {}
+
+    @media screen and (min-width:769px) and (max-width:1024px) {}
+
+    @media screen and (min-width:1025px) and (max-width:1200px) {}
+
+    @media screen and (min-width:1201px) and (max-width:1440px) {}
+    
+}
+
+.picture{
+    position:absolute;
+    margin-left:38em;
+    margin-top:-2em;
+
+    @media (max-width: 480px) {
+        height:15em;
+        width:20em;
+        background-color:golden;
+        margin-left:.8em;
+        margin-top:20em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
 
     @media screen and (min-width:481px) and (max-width:768px) {}
 
@@ -83,7 +118,19 @@ position:relative;
 }
 
 .container{
+    width:80em;
     display:flex;
+    @media (max-width: 480px) {
+        max-width:100%;
+    }
+    @media screen and (min-width:481px) and (max-width:768px) {}
+
+    @media screen and (min-width:769px) and (max-width:1024px) {}
+
+    @media screen and (min-width:1025px) and (max-width:1200px) {}
+
+    @media screen and (min-width:1201px) and (max-width:1440px) {}
+
     .left{
         // background-color:green;
 
@@ -93,7 +140,25 @@ position:relative;
             font-weight:800;
             line-height:44.2px;
             color:rgba(205, 42, 68, 1);
-            padding-left:10%;
+            width:18em;
+            margin-left:2em;
+            @media (max-width: 480px) {
+                font-size:20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:800;
+                line-height:24.4px;
+                color:rgba(205, 42, 68, 1);
+                width:16em;
+                height:auto;
+                margin-left:1em;
+            }
+            @media screen and (min-width:481px) and (max-width:768px) {}
+
+            @media screen and (min-width:769px) and (max-width:1024px) {}
+        
+            @media screen and (min-width:1025px) and (max-width:1200px) {}
+        
+            @media screen and (min-width:1201px) and (max-width:1440px) {}
         }
 
         p{
@@ -102,7 +167,25 @@ position:relative;
             font-weight:500;
             line-height:33.12px;
             color:rgba(10, 18, 42, 1);
-            padding-left:10%;
+            width: 28em;
+            margin-left:3.2em;
+
+            @media (max-width: 480px) {
+                font-size:15px;
+                font-family: 'Montserrat', sans-serif;
+                line-height:21.83px;
+                width:19em;
+                height:auto;
+                margin-left:2em;
+            }
+            @media screen and (min-width:481px) and (max-width:768px) {}
+
+            @media screen and (min-width:769px) and (max-width:1024px) {}
+        
+            @media screen and (min-width:1025px) and (max-width:1200px) {}
+        
+            @media screen and (min-width:1201px) and (max-width:1440px) {}
+            
         }
     }
     .right{
