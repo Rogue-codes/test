@@ -54,7 +54,7 @@ position:relative;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    height:60vh;
+    height:80vh;
 }
 
 @media screen and (min-width:1025px) and (max-width:1200px) {}
@@ -70,9 +70,33 @@ position:relative;
     margin-left:38em;
     margin-top:-9em;
 
-    @media (max-width: 480px) {
-        height:10em;
-        width:10em;
+    @media (max-width: 320px) {
+        height:10rem;
+        width:10rem;
+        margin-left:10rem;
+        // margin-top:15em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+    @media screen and (min-width:321px) and (max-width:414px) {
+        height:10rem;
+        width:10rem;
+        margin-left:15.97em;
+        // margin-top:15em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+    @media screen and (min-width:415px) and (max-width:480px) {
+        height:10rem;
+        width:10rem;
         margin-left:16.47em;
         // margin-top:15em;
 
@@ -145,7 +169,22 @@ position:relative;
         width:100%
     }
 
-    @media (max-width: 480px) {
+
+    @media (max-width: 320px) {
+        height:12em;
+        width:16em;
+        background-color:golden;
+        margin-left:.6em;
+        margin-top:20em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+    
+    
+    @media screen and (min-width:321px) and (max-width:480px) {
         height:15em;
         width:19em;
         background-color:golden;
@@ -248,16 +287,41 @@ position:relative;
             color:rgba(205, 42, 68, 1);
             width:18em;
             margin-left:2em;
-            @media (max-width: 480px) {
+
+            @media (max-width: 320px) {
                 font-size:20px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight:800;
                 line-height:24.4px;
                 color:rgba(205, 42, 68, 1);
-                width:24em;
+                width:18rem;
                 height:auto;
-                margin-left:1em;
+                margin-left:1rem;
             }
+
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                font-size:20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:800;
+                line-height:24.4px;
+                color:rgba(205, 42, 68, 1);
+                width:24rem;
+                height:auto;
+                margin-left:1rem;
+            }
+
+            @media screen and (min-width:415px) and (max-width:480px) {
+                font-size:20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:800;
+                line-height:24.4px;
+                color:rgba(205, 42, 68, 1);
+                width:24rem;
+                height:auto;
+                margin-left:1rem;
+            }
+
             @media screen and (min-width:481px) and (max-width:768px) {
                 font-size:22px;
                 font-family: 'Montserrat', sans-serif;
@@ -311,14 +375,33 @@ position:relative;
             width: 28em;
             margin-left:3.2em;
 
-            @media (max-width: 480px) {
+            @media (max-width: 320px) {
                 font-size:15px;
                 font-family: 'Montserrat', sans-serif;
                 line-height:21.83px;
-                width:22em;
+                width:16rem;
                 height:auto;
                 margin-left:2em;
             }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                font-size:15px;
+                font-family: 'Montserrat', sans-serif;
+                line-height:21.83px;
+                width:24rem;
+                height:auto;
+                margin-left:1rem;
+            }
+
+            @media screen and (min-width:415px) and (max-width:480px) {
+                font-size:15px;
+                font-family: 'Montserrat', sans-serif;
+                line-height:21.83px;
+                width:24rem;
+                height:auto;
+                margin-left:1rem;
+            }
+
             @media screen and (min-width:481px) and (max-width:768px) {
                 font-size:18px;
                 font-family: 'Montserrat', sans-serif;

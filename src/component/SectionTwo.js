@@ -142,12 +142,25 @@ position:relative;
         margin-left:2.25em;
         margin-top: 6.1em;
 
-        @media (max-width: 480px) {
-            width:20em;
+        @media (max-width: 320px) {
+            width:18rem;
             height:2.25em;
             margin-left:1.15em;
             margin-top: 6.1em;
+        }
 
+        @media screen and (min-width:321px) and (max-width:414px) {
+            width:24.2rem;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 6.1em;
+        }
+
+        @media screen and (min-width:415px) and (max-width:480px) {
+            width:24.2rem;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 6.1em;
         }
 
         @media screen and (min-width:481px) and (max-width:768px) {
@@ -182,10 +195,26 @@ position:relative;
             font-size: 30px;
             line-height: 37px;
             color: rgba(10, 18, 42, 1);
+
+            @media (max-width: 320px) {
+                font-size: 20px;
+            }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                font-size: 25px;
+                line-height: 27px;
+            }
+
+            @media screen and (min-width:415px) and (max-width:480px) {
+                font-size: 25px;
+                line-height: 27px;
+            }
+
+            
         }
 
 
-        @media (max-width: 480px) {}
+        
 
         @media screen and (min-width:481px) and (max-width:768px) {}
 
@@ -205,12 +234,26 @@ position:relative;
         margin-left:5.3em;
         margin-top:6.8em;
 
-        @media (max-width: 480px) {
-            width:25em;
+        @media (max-width: 320px) {
+            width:20rem;
             height:auto;
-            margin-left:.1em;
-            margin-top: 6.1em;
+            margin-left:-1rem;
+            margin-top: 3.1em;
 
+        }
+
+        @media screen and (min-width:321px) and (max-width:414px) {
+            width:25rem;
+            height:auto;
+            margin-left:-1rem;
+            margin-top: 6.1em;
+        }
+
+        @media screen and (min-width:415px) and (max-width:480px) {
+            width:25rem;
+            height:auto;
+            margin-left:-1rem;
+            margin-top: 3.1em;
         }
 
         @media screen and (min-width:481px) and (max-width:768px) {
@@ -248,11 +291,11 @@ position:relative;
                 line-height: 22px;
                 height:4.43em;
 
-                @media (max-width: 480px) {
+                @media (max-width: 320px) {
                     font-family: Montserrat;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 17px;
+                    font-size: 14px;
                     line-height: 25.5px;
                     height:4.43em;
                     padding-top:2em;
@@ -273,12 +316,26 @@ position:relative;
         margin-left:5em;
         height:auto;
 
-        @media (max-width: 480px) {
-            width:21em;
+        @media (max-width: 320px) {
+            width:16rem;
             height:auto;
             margin-left:1.5em;
             margin-top: 6.1em;
 
+        }
+
+        @media screen and (min-width:321px) and (max-width:414px) {
+            width:20rem;
+            height:auto;
+            margin-left:1.5em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:415px) and (max-width:480px) {
+            width:23rem;
+            height:auto;
+            margin-left:1.5em;
+            margin-top: 3.1em;
         }
 
         @media screen and (min-width:481px) and (max-width:768px) {
@@ -400,9 +457,31 @@ position:relative;
             width:100%
         }
     
-        @media (max-width: 480px) {
+        @media (max-width: 320px) {
             background-color:golden;
-            margin-left: 4em;
+            margin-left: .1em;
+            margin-top:-6em;
+    
+            img{
+                height:100%;
+                width:100%
+            }
+        }
+
+        @media screen and (min-width:321px) and (max-width:414px) {
+            background-color:golden;
+            margin-left: 5rem;
+            margin-top:-6em;
+    
+            img{
+                height:100%;
+                width:100%
+            }
+        }
+
+        @media screen and (min-width:415px) and (max-width:480px) {
+            background-color:golden;
+            margin-left: 5rem;
             margin-top:-6em;
     
             img{

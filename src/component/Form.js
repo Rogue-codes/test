@@ -73,7 +73,17 @@ const StyledForm = styled.div`
     max-width:539px;
     margin:auto;
 
-    @media (max-width: 480px) {
+    @media (max-width: 320px) {
+        max-width:90%;
+        margin-top 4em;
+    }
+
+    @media screen and (min-width:321px) and (max-width:414px) {
+        max-width:90%;
+        margin-top 4em;
+    }
+
+    @media screen and (min-width:415px) and (max-width:480px) {
         max-width:90%;
         margin-top 4em;
     }
@@ -93,10 +103,10 @@ const StyledForm = styled.div`
         margin:auto;
         height:auto;
 
-        @media (max-width: 480px) {
+        @media (max-width: 320px) {
             max-width:24.31em;
             height:63px;
-            margin:auto;
+            margin-left:1em;
         }
 
 
@@ -120,9 +130,9 @@ const StyledForm = styled.div`
             }
         }
 
-        @media (max-width: 480px) {
-            padding-top:10px;
-            font-size: 14px;
+        @media (max-width: 320px) {
+            padding-top:5px;
+            font-size: 12px;
             Line height:20.72px;
             color:rgba(255, 255, 255, 1);
             font-weight:600;
@@ -204,9 +214,22 @@ const StyledForm = styled.div`
             padding-left:10px;
             font-family: 'Montserrat', sans-serif;
 
-            @media (max-width: 480px) {
-                margin-left:.5em;
-                width:14em;
+            @media (max-width: 320px) {
+                margin-left:1rem;
+                width:15rem;
+                font-size:18px;
+            }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                margin-left:1.4rem;
+                width:20rem;
+                font-size:18px;
+            }
+
+            @media screen and (min-width:414px) and (max-width:480px) {
+                margin-left:1.4rem;
+                width:20rem;
+                font-size:18px;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
@@ -232,8 +255,19 @@ const StyledForm = styled.div`
             font-weight:600;
             cursor:pointer;
 
-            @media (max-width: 480px) {
+            @media (max-width: 320px) {
                 margin-left:2em;
+                width:14rem;
+            }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                margin-left:2.8em;
+                width:16rem;
+            }
+
+            @media screen and (min-width:414px) and (max-width:480px) {
+                margin-left:2.8em;
+                width:16rem;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
