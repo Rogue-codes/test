@@ -16,10 +16,15 @@ const Footer = () => {
 export default Footer
 
 const StyledFooter = styled.footer`
-margin-top:30vh;
+margin-top:50vh;
 .foot{
     max-width:323px;
     margin:auto;
+
+    @media (max-width: 320px) {
+        max-width:223px;
+        margin:auto;
+    }
 
     p{
         font-family: Montserrat;
@@ -28,6 +33,10 @@ margin-top:30vh;
         font-size: 16px;
         line-height: 106%;
         color: #767676;
+
+        @media (max-width: 320px) {
+            text-align:center;
+        }
     }
 }
 

@@ -45,9 +45,10 @@ background:url(${background});
 // background-color:pink;
 width:100%;
 height:90vh;
+margin-bottom:50em
 position:relative;
 
-@media (max-width: 480px) {}
+
 
 @media screen and (min-width:481px) and (max-width:768px) {
     height:50vh;

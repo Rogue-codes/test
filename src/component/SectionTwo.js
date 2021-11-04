@@ -6,6 +6,27 @@ import book from '../assets/book2.png'
 const SectionTwo = () => {
     return (
         <StyledTwo>
+            <div className="introductoryPrice">
+            <div className="priceMobile">
+            <div className="price">
+                        <div className="introductoryPrice">
+                            <p>INTRODUCTORY PRICE <span>for the first <strong>500 Order:</strong></span></p>
+                        </div>
+
+                        <div className="cash">
+                            <h1>₦2,000</h1>
+                        </div>
+
+                        <div className="strike">
+                            <strike>₦5,000</strike>
+                        </div>
+
+                        <div className="priceGoesBack">
+                            <p>Price goes back to ₦5,000 after the first 500 people</p>
+                        </div>
+                    </div>
+            </div>
+            </div>
 
             <div className="container">
                 <div className="left">
@@ -32,7 +53,7 @@ const SectionTwo = () => {
 
                     <div className="list">
                         <ul>
-                            <li>A free 15 mins consultation call with the author Olabanji Ewenla regarding anything you'd like to find out about the tech industry</li>
+                            <li className='banj'>A free 15 mins consultation call with the author Olabanji Ewenla regarding anything you'd like to find out about the tech industry</li>
                             <li>20% discount off the tuition fee for UIUX design training at Perxels Design School</li>
                             <li>20% discount off the tuition fee for Product Management training at Enoverlab</li>
                             <li>Direct link to an in-depth course on how to make money online as a freelancer</li>
@@ -96,6 +117,92 @@ position:relative;
 @media screen and (min-width:1025px) and (max-width:1200px) {}
 
 @media screen and (min-width:1201px) and (max-width:1440px) {}
+
+.priceMobile{
+    @media screen and (min-width:320px) and (max-width:480px) {
+        margin-top:45rem;
+    }
+
+    @media screen and (min-width:481px) and (max-width:768px) {
+        margin-top:13rem;
+    }
+    .price{
+        max-width:323px;
+        height:189px;
+        background-color:rgba(255, 231, 235, 1);
+        margin:auto;
+        display:none;
+        
+
+        @media screen and (min-width:320px) and (max-width:768px) {
+            display:block;
+            // margin-top:30rem;
+        }
+
+        @media (max-width: 480px) {
+            display:block;
+            margin-top:-550px;
+            margin-bottom:50px;
+        }
+        .introductoryPrice{
+            max-width:212px;
+            margin:auto;
+            height:43px;
+
+            p{
+                font-size:16px;
+                font-family: 'Montserrat', sans-serif;
+                line-height:26.64px;
+                font-weight:700;
+                color:rgba(246, 147, 164, 1);
+
+                span{
+                    font-size: 12px;
+                    text-allign:center;
+                }
+            }
+        }
+
+        .cash{
+            max-width:116px;
+            margin:auto;
+            height:44px;
+
+            h1{
+                font-size:30px;
+                font-family: 'Montserrat', sans-serif;
+                line-height:44.4px;
+                font-weight:800;
+                color:rgba(200, 42, 69, 1);
+            }
+        }
+
+        .strike{
+            max-width:77px;
+            margin:auto;
+            height:27px;
+            font-size:18px;
+            font-family: 'Montserrat', sans-serif;
+            line-height:26.64px;
+            font-weight:800;
+            color:rgba(0, 0, 0, 1);
+        }
+
+        .priceGoesBack{
+            max-width:177px;
+            margin:auto;
+            height:34px;
+            
+            p{
+                font-size:12px;
+                font-family: 'Montserrat', sans-serif;
+                line-height:16.62px;
+                font-weight:700;
+                color:rgba(0, 0, 0, 1);
+            }
+        }
+    }
+}
 
 .container{
     display:flex;
@@ -303,6 +410,11 @@ position:relative;
                 }
             }
         }
+        .banj{
+            @media (max-width: 480px) {
+                padding-bottom:40px;
+            }
+        }
         li::before {
             content: "• ";
             font-size:40px;
@@ -381,6 +493,10 @@ position:relative;
             height:11.8em;
             background-color:rgba(255, 231, 235, 1);
             margin:auto;
+
+            @media (max-width: 768px) {
+                display:none;
+            }
 
             .introductoryPrice{
                 max-width:13.25em;
