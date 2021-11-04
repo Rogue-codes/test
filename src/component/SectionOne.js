@@ -26,7 +26,7 @@ const SectionOne = () => {
             </div>
 
             <div className="container">
-                <div className="left" data-aos="fade-right">
+                <div className="left">
                     <h1>
                         In this book, you will discover the most important insights you need to become a 
                         "bloody millionaire" in the tech industry.

@@ -29,7 +29,7 @@ const SectionTwo = () => {
             </div>
 
             <div className="container">
-                <div className="left" data-aos="fade-right">
+                <div className="left" data-aos="fade-up">
                     <div className="head">
                         <h1>
                              What you will learn from "The Blood Money in Tech"
@@ -69,7 +69,7 @@ const SectionTwo = () => {
 
                 </div>
 
-                <div className="right" data-aos="fade-left">
+                <div className="right" data-aos="fade-up">
                 <div className="price">
                         <div className="introductoryPrice">
                             <p>INTRODUCTORY PRICE <span>for the first <strong>500 Order:</strong></span></p>
