@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import {useEffect, useRef, useState} from 'react'
 import logo from "../assets/logo.png"
 import shape from '../assets/backgroundshape.png'
 import background from '../assets/rec.png'
@@ -8,6 +8,43 @@ import Aos from 'aos';
 import "aos/dist/aos.css"
 
 const SectionOne = () => {
+    const [hours, setHours] = useState ('00')
+    const [mins, setMins] = useState ('00')
+    const [secs, setSecs] = useState ('00')
+
+    let interval = useRef()
+
+    const startTimer = () => {
+        const countDownTime = new Date('November 5, 2021 00:00:00').getTime()
+
+        interval = setInterval(()=>{
+            const now = new Date().getTime()
+            const distance = countDownTime - now
+
+            const hrs = Math.floor( (distance % (1000 * 60 * 60 *24)/(1000*60*60)) )
+            const min = Math.floor( ((distance % (1000 * 60 * 60)/(1000*60))))
+            const sec = Math.floor( (distance % (1000 * 60)) /1000)
+
+            if (distance < 0){
+                //end timer
+                clearInterval(interval.current)
+            }else{
+                //update timer
+                setHours(hrs)
+                setMins(min)
+                setSecs(sec)
+            }
+        }, 1000)
+
+    }
+
+    useEffect(()=>{
+        startTimer()
+        return () => {
+            // clearInterval(interval.current)
+        }
+    })
+
     useEffect(()=>{
         Aos.init({duration : 2000})
     },[])
@@ -28,15 +65,27 @@ const SectionOne = () => {
             <div className="container">
                 <div className="left">
                     <h1>
-                        In this book, you will discover the most important insights you need to become a 
-                        "bloody millionaire" in the tech industry.
+                        Be among the first 500 people to pre-order this book and get 60% off Pay N2,000 instead of N5,000
                     </h1>
 
-                    <p>
-                        If you follow the instructions in this book consistently for 3 - 6 months, 
-                        you will fast track your career growth in tech, increase your value, and make 
-                        more money.
-                    </p>
+                    <section>
+                        <div className="offer">
+                            Offer closes in
+                         </div>
+                         <div className="time">
+                         <span className='hr'>{hours}</span>
+                         <span className='unit'><small>hrs</small></span> 
+                         <span className='col'>:</span>
+                         <span className='min'>{mins}</span>
+                         <span className='unit'><small>mins</small></span> 
+                         <span className='col'>:</span>
+                         <span className='sec'>{secs}</span>
+                         <span className='unit'><small>secs</small></span>
+                         </div>
+                    </section>
+                    <div class="stage">
+                    <button className='box bounce-7'>Register here</button>
+                    </div>
                 </div>
             </div>
         </Styledone>
@@ -56,7 +105,11 @@ position:relative;
 
 
 @media screen and (min-width:481px) and (max-width:768px) {
-    height:50vh;
+    height:70vh;
+}
+
+@media (max-width: 320px) {
+    height:120vh;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -177,10 +230,10 @@ position:relative;
 
 
     @media (max-width: 320px) {
-        height:12em;
-        width:16em;
+        height:20em;
+        max-width:30em;
         background-color:golden;
-        margin-left:.6em;
+        margin-left:-9.8em;
         margin-top:20em;
 
         img{
@@ -263,6 +316,8 @@ position:relative;
 
     @media (max-width: 320px) {
         margin-left:.5rem;
+        height:4rem;
+        width:4rem;
     }
 
     @media screen and (min-width:321px) and (max-width:414px) {
@@ -384,6 +439,99 @@ position:relative;
             }
         }
 
+        section{
+            display:flex;
+            align-items:center;
+
+            @media (max-width: 320px) {
+                width: 13em;
+                flex-direction:column;
+            }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                width: 13em;
+                flex-direction:column;
+            }
+
+            .ofr{
+                font-size:44px;
+                font-family: 'Montserrat', sans-serif;
+                color:rgba(10, 18, 42, 1);
+                width: 33em;
+                margin-left:2.3em;
+                margin-bottom:3rem;
+
+                @media (max-width: 320px) {
+                    width: 3em;
+                    flex-direction:column;
+                }
+
+                @media screen and (min-width:321px) and (max-width:414px) {
+                width: 6em;
+                padding-bottom:9rem;
+            }
+
+            }
+
+            .hr{
+            font-family: 'Montserrat', sans-serif;
+            font-weight:800;
+            font-size:44px;
+            line-height:33.12px;
+            color:rgba(10, 18, 42, 1);
+            margin-left:3.2em;
+
+            @media (max-width: 320px) {
+                margin-left:5em;
+                font-size:22px;
+            }
+            }
+
+            .min{
+            font-size:44px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:800;
+            line-height:33.12px;
+            color:rgba(10, 18, 42, 1);
+            margin-left:.2em;
+
+            @media (max-width: 320px) {
+                // margin-left:.12em;
+                font-size:22px;
+            }
+            }
+
+            .sec{
+            font-size:44px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:800;
+            line-height:33.12px;
+            color:rgba(10, 18, 42, 1);
+            margin-left:.2em;
+
+            @media (max-width: 320px) {
+                // margin-left:.12em;
+                font-size:22px;
+            }
+            }
+
+            .col{
+                font-size: 30px;
+                font-weight:bolder;
+                margin-left:1rem;
+            }
+
+            .unit{
+                font-size: 30px;
+                font-weight:bolder;
+                margin-left:.1rem;
+
+                @media (max-width: 320px) {
+                    // margin-left:.12em;
+                    font-size:18px;
+            }
+        }
+
         p{
             font-size:24px;
             font-family: 'Montserrat', sans-serif;
@@ -457,6 +605,73 @@ position:relative;
             
         }
     }
+
+    .stage{
+        display: flex;
+        height: 220px;
+        width: 100%;
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            height: 120px;
+        }
+
+        @media (max-width: 320px) {
+            height: 120px;
+        }
+
+            .box{
+                align-self: center;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                transform-origin: bottom;
+                height:3em;
+                width:14em;
+                margin-left:4em;
+                margin-top:2em;
+                margin-bottom:2em;
+                border-radius:5px;
+                border:none;
+                background-color:rgba(10, 18, 42, 1);
+                color:rgba(255, 255, 255, 1);
+                font-size:20px;
+                line-height:21.2px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:600;
+                cursor:pointer;
+
+                @media screen and (min-width:481px) and (max-width:768px) {
+                    width:10em;
+                    font-size:16px;
+                    height:2.5em;
+                    margin-left:2em;
+                    margin-top:12em;
+                }
+
+                @media (max-width: 320px) {
+                    max-width:10em;
+                    font-size:14px;
+                    height:2.5em;
+                    margin:auto;
+                    margin-top:10em;
+                    margin-bottom:8em;
+                }
+            }
+            .bounce-7 {
+                animation-name: bounce-7;
+                animation-timing-function: cubic-bezier(1.280, 1.840, 1.420, 1);
+
+                @keyframes bounce-7 {
+                    0%   { transform: scale(1,1)      translateY(0); }
+                    10%  { transform: scale(1.1,.9)   translateY(0); }
+                    30%  { transform: scale(.9,1.1)   translateY(-10px); }
+                    50%  { transform: scale(1.05,.95) translateY(0); }
+                    57%  { transform: scale(1,1)      translateY(-7px); }
+                    64%  { transform: scale(1,1)      translateY(0); }
+                    100% { transform: scale(1,1)      translateY(0); }
+                }
+            }
+        }
+        
     .right{
         // background-color:yellow;
     }

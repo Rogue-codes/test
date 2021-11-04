@@ -6,7 +6,7 @@ import book from '../assets/book2.png'
 const SectionTwo = () => {
     return (
         <StyledTwo>
-            <div className="introductoryPrice">
+            {/* <div className="introductoryPrice">
             <div className="priceMobile">
             <div className="price">
                         <div className="introductoryPrice">
@@ -26,6 +26,21 @@ const SectionTwo = () => {
                         </div>
                     </div>
             </div>
+            </div> */}
+
+            <div className="contain">
+                <div className="left">
+                    <h1>
+                        In this book, you will discover the most important insights you need to become a 
+                        "bloody millionaire" in the tech industry.
+                    </h1>
+
+                    <p>
+                        If you follow the instructions in this book consistently for 3 - 6 months, 
+                        you will fast track your career growth in tech, increase your value, and make 
+                        more money.
+                    </p>
+                </div>
             </div>
 
             <div className="container">
@@ -203,7 +218,77 @@ position:relative;
         }
     }
 }
+.contain{
+    // background-color:gold;
+    max-width:90%;
+    margin:auto;
+    padding-bottom: 10rem;
 
+    @media (max-width: 320px) {
+        padding-bottom: 2rem;
+    }
+
+    .left{
+        max-width:100%;
+        h1{
+            font-size:40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:800;
+            line-height:44.2px;
+            color:rgba(205, 42, 68, 1);
+            width:28em;
+            margin-left:.4rem;
+
+            @media screen and (min-width:481px) and (max-width:768px) {
+                width:40rem;
+                line-height:44.2px;
+                font-size:30px;
+            }
+
+            @media (max-width: 320px) {
+                width:18rem;
+                line-height:44.2px;
+                font-size:20px;
+            }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                width:20rem;
+                line-height:44.2px;
+                font-size:20px;
+            }
+        }
+
+        p{
+            font-size:24px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight:500;
+            line-height:33.12px;
+            color:rgba(10, 18, 42, 1);
+            width: 50em;
+            margin-left:.2rem;
+
+            @media screen and (min-width:481px) and (max-width:768px) {
+                width:40rem;
+                line-height:44.2px;
+                font-size:20px;
+            }
+
+            @media (max-width: 320px) {
+                width:18rem;
+                line-height:44.2px;
+                font-size:14px;
+            }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                width:20rem;
+                line-height:44.2px;
+                font-size:20px;
+            }
+
+            
+        }
+    }
+}
 .container{
     display:flex;
     justify-conter:center;
@@ -253,7 +338,7 @@ position:relative;
             width:18rem;
             height:2.25em;
             margin-left:1.15em;
-            margin-top: 6.1em;
+            margin-top: 3.1em;
         }
 
         @media screen and (min-width:321px) and (max-width:414px) {
@@ -345,7 +430,7 @@ position:relative;
             width:20rem;
             height:auto;
             margin-left:-1rem;
-            margin-top: 3.1em;
+            margin-top: 1.1em;
 
         }
 
@@ -468,7 +553,7 @@ position:relative;
         h3{
             font-family: Montserrat;
             font-style: normal;
-            font-weight: 800;
+            font-weight: 900;
             font-size: 16px;
             line-height: 150%;
             color: #524C4C;
