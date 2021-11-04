@@ -103,7 +103,7 @@ const SectionTwo = () => {
                         </div>
                     </div>
 
-                    <Form/>
+                    <Form />
 
                     <div className="book">
                         <img src={book} alt="" />

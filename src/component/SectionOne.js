@@ -84,7 +84,7 @@ const SectionOne = () => {
                          </div>
                     </section>
                     <div class="stage">
-                    <a href="#reg"><button className='box bounce-7'>Register here</button></a>
+                    <button className='box bounce-7'><a href="#reg">Register here</a> </button>
                     </div>
                 </div>
             </div>
@@ -957,12 +957,16 @@ position:relative;
                 border-radius:5px;
                 border:none;
                 background-color:rgba(205, 42, 68, 1);
-                color:rgba(255, 255, 255, 1);
                 font-size:20px;
                 line-height:21.2px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight:600;
-                cursor:pointer;
+                // cursor:pointer;
+
+                a{
+                    color:rgba(255, 255, 255, 1);
+                    text-decoration:none;
+                }
 
                 @media screen and (min-width:481px) and (max-width:768px) {
                     width:10em;

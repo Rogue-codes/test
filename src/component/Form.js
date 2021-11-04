@@ -42,7 +42,7 @@ const Form = () => {
     return (
         
         <StyledForm>
-            <div className="formcontainer">
+            <div className="formcontainer" id='reg'>
             <div className="register"><h1>Register to be among the first to be notified when the book launches</h1></div>
 
             <form method ='post' autoComplete='off' name='google-sheet' onSubmit={handleSubmit}>
