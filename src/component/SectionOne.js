@@ -1,11 +1,16 @@
-import React from 'react'
+import {useEffect} from 'react'
 import logo from "../assets/logo.png"
 import shape from '../assets/backgroundshape.png'
 import background from '../assets/rec.png'
 import book from '../assets/book1.png'
 import styled from 'styled-components'
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 const SectionOne = () => {
+    useEffect(()=>{
+        Aos.init({duration : 2000})
+    },[])
     return (
         <Styledone>
             <div className="logo">
@@ -16,12 +21,12 @@ const SectionOne = () => {
                 <img src={shape} alt="" className='redshape' />
             </div>
 
-            <div className="picture">
+            <div className="picture" data-aos="fade-down">
                 <img src={book} alt="" />
             </div>
 
             <div className="container">
-                <div className="left">
+                <div className="left" data-aos="fade-right">
                     <h1>
                         In this book, you will discover the most important insights you need to become a 
                         "bloody millionaire" in the tech industry.
