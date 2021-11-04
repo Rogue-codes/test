@@ -496,6 +496,11 @@ position:relative;
                 flex-direction:column;
             }
 
+            @media screen and (min-width:481px) and (max-width:768px) {
+                width: 13em;
+                flex-direction:column;
+            }
+
             .offer{
                 
                 width: 33em;
@@ -504,6 +509,10 @@ position:relative;
 
                 p{
                     text-align:center;
+
+                    @media screen and (min-width:481px) and (max-width:768px) {
+                        font-size:20px;
+                    }
                 }
 
                 @media (max-width: 320px) {
@@ -526,6 +535,14 @@ position:relative;
                 margin-left:2.3em;
             }
 
+            @media screen and (min-width:481px) and (max-width:768px) {
+                width: 26em;
+                margin-left:.3em;
+                margin-bottom:1rem;
+            }
+                    
+            }
+
             }
 
             .hr{
@@ -542,6 +559,11 @@ position:relative;
             }
 
             @media screen and (min-width:321px) and (max-width:414px) {
+                margin-left:9em;
+                font-size:22px;
+            }
+
+            @media screen and (min-width:481px) and (max-width:768px) {
                 margin-left:9em;
                 font-size:22px;
             }
@@ -565,6 +587,11 @@ position:relative;
                 font-size:22px;
             }
 
+            @media screen and (min-width:481px) and (max-width:768px) {
+                margin-left:.2em;
+                font-size:22px;
+            }
+
             }
 
             .sec{
@@ -585,6 +612,11 @@ position:relative;
                 font-size:22px;
             }
 
+            @media screen and (min-width:481px) and (max-width:768px) {
+                margin-left:.2em;
+                font-size:22px;
+            }
+
             }
 
             .col{
@@ -592,6 +624,11 @@ position:relative;
                 font-weight:bolder;
                 margin-left:1rem;
                 @media screen and (min-width:321px) and (max-width:414px) {
+                    margin-left:.2em;
+                    font-size: 20px;
+                }
+
+                @media screen and (min-width:481px) and (max-width:768px) {
                     margin-left:.2em;
                     font-size: 20px;
                 }
