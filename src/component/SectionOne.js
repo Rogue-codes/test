@@ -255,6 +255,18 @@ position:relative;
 
 .logo{
     margin-left:2em;
+
+    @media (max-width: 320px) {
+        margin-left:.5rem;
+    }
+
+    @media screen and (min-width:321px) and (max-width:414px) {
+        margin-left:.5rem;
+    }
+
+    @media screen and (min-width:415px) and (max-width:480px) {
+        margin-left:.5rem;
+    }
 }
 
 .container{
