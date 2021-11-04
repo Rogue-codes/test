@@ -109,6 +109,12 @@ const StyledForm = styled.div`
             margin-left:1em;
         }
 
+        @media screen and (min-width:321px) and (max-width:414px) {
+            max-width:24.31em;
+            height:63px;
+            margin-left:0em;
+        }
+
 
 
         h1{
@@ -128,16 +134,22 @@ const StyledForm = styled.div`
                 font-weight:800;
                 font-family: 'Montserrat', sans-serif;
             }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                text-align:center;
+                font-size: 18px;
+            }
+
+            @media (max-width: 320px) {
+                padding-top:35px;
+                font-size: 14px;
+                Line height:20.72px;
+                color:rgba(255, 255, 255, 1);
+                font-weight:600;
+                font-family: 'Montserrat', sans-serif;
+            }
         }
 
-        @media (max-width: 320px) {
-            padding-top:5px;
-            font-size: 12px;
-            Line height:20.72px;
-            color:rgba(255, 255, 255, 1);
-            font-weight:600;
-            font-family: 'Montserrat', sans-serif;
-        }
     }
 
     form{
@@ -220,7 +232,13 @@ const StyledForm = styled.div`
                 font-size:18px;
             }
 
-            @media screen and (min-width:321px) and (max-width:414px) {
+            @media screen and (min-width:321px) and (max-width:375px) {
+                margin-left:1rem;
+                width:18rem;
+                font-size:18px;
+            }
+
+            @media screen and (min-width:376px) and (max-width:414px) {
                 margin-left:1.4rem;
                 width:20rem;
                 font-size:18px;

@@ -65,12 +65,12 @@ const SectionOne = () => {
             <div className="container">
                 <div className="left">
                     <h1>
-                        Be among the first 500 people to pre-order this book and get 60% off Pay N2,000 instead of N5,000
+                        Be among the first 500 people to pre-order this book and get 60% off. Pay N2,000 instead of N5,000
                     </h1>
 
                     <section>
                         <div className="offer">
-                            Offer closes in
+                            <p>Offer closes in</p> 
                          </div>
                          <div className="time">
                          <span className='hr'>{hours}</span>
@@ -109,7 +109,15 @@ position:relative;
 }
 
 @media (max-width: 320px) {
+    height:150vh;
+}
+
+@media screen and (min-width:321px) and (max-width:375px) {
     height:120vh;
+}
+
+@media screen and (min-width:321px) and (max-width:414px) {
+    height:130vh;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -141,7 +149,20 @@ position:relative;
         }
     }
 
-    @media screen and (min-width:321px) and (max-width:414px) {
+    @media screen and (min-width:321px) and (max-width:375px) {
+        height:10rem;
+        width:10rem;
+        margin-left:12.97em;
+        // margin-top:15em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+
+    @media screen and (min-width:376px) and (max-width:414px) {
         height:10rem;
         width:10rem;
         margin-left:15.97em;
@@ -230,11 +251,11 @@ position:relative;
 
 
     @media (max-width: 320px) {
-        height:20em;
+        height:23em;
         max-width:30em;
         background-color:golden;
         margin-left:-9.8em;
-        margin-top:20em;
+        margin-top:25em;
 
         img{
             height:100%;
@@ -242,13 +263,25 @@ position:relative;
         }
     }
     
-    
-    @media screen and (min-width:321px) and (max-width:480px) {
-        height:15em;
-        width:19em;
+    @media screen and (min-width:321px) and (max-width:375px) {
+        height:25em;
+        width:32em;
         background-color:golden;
-        margin-left:.6em;
-        margin-top:20em;
+        margin-left:-9.5em;
+        margin-top:25em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+    @media screen and (min-width:376px) and (max-width:414px) {
+        height:25em;
+        width:32em;
+        background-color:golden;
+        margin-left:-6em;
+        margin-top:25em;
 
         img{
             height:100%;
@@ -317,7 +350,7 @@ position:relative;
     @media (max-width: 320px) {
         margin-left:.5rem;
         height:4rem;
-        width:4rem;
+        width:3rem;
     }
 
     @media screen and (min-width:321px) and (max-width:414px) {
@@ -372,8 +405,18 @@ position:relative;
                 margin-left:1rem;
             }
 
+            @media screen and (min-width:321px) and (max-width:375px) {
+                font-size:20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:800;
+                line-height:24.4px;
+                color:rgba(205, 42, 68, 1);
+                width:22rem;
+                height:auto;
+                margin-left:1rem;
+            }
 
-            @media screen and (min-width:321px) and (max-width:414px) {
+            @media screen and (min-width:376px) and (max-width:414px) {
                 font-size:20px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight:800;
@@ -453,22 +496,34 @@ position:relative;
                 flex-direction:column;
             }
 
-            .ofr{
-                font-size:44px;
-                font-family: 'Montserrat', sans-serif;
-                color:rgba(10, 18, 42, 1);
+            .offer{
+                
                 width: 33em;
                 margin-left:2.3em;
-                margin-bottom:3rem;
+                margin-bottom:1rem;
 
-                @media (max-width: 320px) {
-                    width: 3em;
-                    flex-direction:column;
+                p{
+                    text-align:center;
                 }
 
-                @media screen and (min-width:321px) and (max-width:414px) {
-                width: 6em;
-                padding-bottom:9rem;
+                @media (max-width: 320px) {
+                    width: 1em;
+                    // flex-direction:column;
+                    margin-left:-14em;
+                    // margin:auto;
+                    // display:none;
+                }
+
+                @media screen and (min-width:321px) and (max-width:375px) {
+                    width: 16em;
+                padding-bottom:.5rem;
+                margin-left:.3em;
+                }
+
+                @media screen and (min-width:376px) and (max-width:414px) {
+                width: 16em;
+                padding-bottom:.5rem;
+                margin-left:2.3em;
             }
 
             }
@@ -485,6 +540,11 @@ position:relative;
                 margin-left:5em;
                 font-size:22px;
             }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                margin-left:9em;
+                font-size:22px;
+            }
             }
 
             .min{
@@ -499,6 +559,12 @@ position:relative;
                 // margin-left:.12em;
                 font-size:22px;
             }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                // margin-left:9em;
+                font-size:22px;
+            }
+
             }
 
             .sec{
@@ -513,12 +579,27 @@ position:relative;
                 // margin-left:.12em;
                 font-size:22px;
             }
+
+            @media screen and (min-width:321px) and (max-width:414px) {
+                // margin-left:9em;
+                font-size:22px;
+            }
+
             }
 
             .col{
                 font-size: 30px;
                 font-weight:bolder;
                 margin-left:1rem;
+                @media screen and (min-width:321px) and (max-width:414px) {
+                    margin-left:.2em;
+                    font-size: 20px;
+                }
+
+                @media (max-width: 320px) {
+                    margin-left:.2em;
+                    font-size: 20px;
+                }
             }
 
             .unit{
@@ -631,7 +712,7 @@ position:relative;
                 margin-bottom:2em;
                 border-radius:5px;
                 border:none;
-                background-color:rgba(10, 18, 42, 1);
+                background-color:rgba(205, 42, 68, 1);
                 color:rgba(255, 255, 255, 1);
                 font-size:20px;
                 line-height:21.2px;
@@ -653,8 +734,18 @@ position:relative;
                     height:2.5em;
                     margin:auto;
                     margin-top:10em;
+                    margin-bottom:10em;
+                }
+
+                @media screen and (min-width:321px) and (max-width:414px) {
+                    max-width:10em;
+                    font-size:14px;
+                    height:2.5em;
+                    margin:auto;
+                    margin-top:5em;
                     margin-bottom:8em;
                 }
+                
             }
             .bounce-7 {
                 animation-name: bounce-7;
