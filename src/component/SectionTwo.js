@@ -79,7 +79,7 @@ const SectionTwo = () => {
                     </div>
 
                     <div className="last">
-                        <h3>You will receive the following benefits in your email after the purchase of the book.</h3>
+                        <h3><strong>You will receive the following benefits in your email after the purchase of the book.</strong></h3>
                     </div>
 
                 </div>
@@ -273,6 +273,12 @@ position:relative;
                 line-height:44.2px;
                 font-size:20px;
             }
+
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                width:55rem;
+                line-height:44.2px;
+                font-size:30px;
+            }
         }
 
         p{
@@ -286,6 +292,18 @@ position:relative;
 
             @media screen and (min-width:481px) and (max-width:768px) {
                 width:40rem;
+                line-height:44.2px;
+                font-size:20px;
+            }
+
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                width:55rem;
+                line-height:44.2px;
+                font-size:20px;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                width:65rem;
                 line-height:44.2px;
                 font-size:20px;
             }
@@ -751,8 +769,8 @@ position:relative;
     
         @media screen and (min-width:769px) and (max-width:1024px) {
             background-color:golden;
-            margin-left:3em;
-            margin-top:-6em;
+            margin-left:6em;
+            margin-top:-8em;
     
             img{
                 height:100%;

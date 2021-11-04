@@ -121,10 +121,12 @@ position:relative;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    height:80vh;
+    height:100vh;
 }
 
-@media screen and (min-width:1025px) and (max-width:1200px) {}
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    height:110vh;
+}
 
 @media screen and (min-width:1441px) {
     height:100vh;
@@ -453,9 +455,9 @@ position:relative;
                 font-size:25px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight:800;
-                line-height:24.4px;
+                line-height:44.4px;
                 color:rgba(205, 42, 68, 1);
-                width:28em;
+                width:25em;
                 height:auto;
                 margin-left:1em;
             }
@@ -485,6 +487,7 @@ position:relative;
         section{
             display:flex;
             align-items:center;
+            flex-direction:column;
 
             @media (max-width: 320px) {
                 width: 13em;
@@ -501,17 +504,32 @@ position:relative;
                 flex-direction:column;
             }
 
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                width: 13em;
+                flex-direction:column;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                width: 13em;
+                flex-direction:column;
+            }
+
             .offer{
                 
-                width: 33em;
-                margin-left:2.3em;
+                width: 83em;
+                margin-left:-19em;
                 margin-bottom:1rem;
 
                 p{
                     text-align:center;
+                    font-size:30px;
 
                     @media screen and (min-width:481px) and (max-width:768px) {
                         font-size:20px;
+                    }
+
+                    @media screen and (min-width:1025px) and (max-width:1200px) {
+                        font-size:40px;
                     }
                 }
 
@@ -540,6 +558,18 @@ position:relative;
                 margin-left:.3em;
                 margin-bottom:1rem;
             }
+
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                width: 32em;
+                margin-left:.3em;
+                margin-bottom:1rem;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                width: 75em;
+                margin-left:.3em;
+                margin-bottom:1rem;
+            }
                     
             }
 
@@ -551,7 +581,7 @@ position:relative;
             font-size:44px;
             line-height:33.12px;
             color:rgba(10, 18, 42, 1);
-            margin-left:3.2em;
+            margin-left:-9em;
 
             @media (max-width: 320px) {
                 margin-left:5em;
@@ -567,6 +597,17 @@ position:relative;
                 margin-left:9em;
                 font-size:22px;
             }
+
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                margin-left:6em;
+                font-size:32px;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                margin-left:6em;
+                font-size:32px;
+            }
+
             }
 
             .min{
@@ -590,6 +631,16 @@ position:relative;
             @media screen and (min-width:481px) and (max-width:768px) {
                 margin-left:.2em;
                 font-size:22px;
+            }
+
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                margin-left:.2em;
+                font-size:32px;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                margin-left:.2em;
+                font-size:32px;
             }
 
             }
@@ -617,6 +668,16 @@ position:relative;
                 font-size:22px;
             }
 
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                margin-left:.2em;
+                font-size:32px;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                margin-left:.2em;
+                font-size:32px;
+            }
+
             }
 
             .col{
@@ -631,6 +692,16 @@ position:relative;
                 @media screen and (min-width:481px) and (max-width:768px) {
                     margin-left:.2em;
                     font-size: 20px;
+                }
+
+                @media screen and (min-width:769px) and (max-width:1024px) {
+                    margin-left:.2em;
+                    font-size: 30px;
+                }
+
+                @media screen and (min-width:1025px) and (max-width:1200px) {
+                    margin-left:.2em;
+                    font-size: 30px;
                 }
 
                 @media (max-width: 320px) {
