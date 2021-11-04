@@ -120,6 +120,10 @@ position:relative;
     height:130vh;
 }
 
+@media screen and (min-width:415px) and (max-width:425px) {
+    height:130vh;
+}
+
 @media screen and (min-width:769px) and (max-width:1024px) {
     height:100vh;
 }
@@ -279,6 +283,19 @@ position:relative;
     }
 
     @media screen and (min-width:376px) and (max-width:414px) {
+        height:25em;
+        width:32em;
+        background-color:golden;
+        margin-left:-6em;
+        margin-top:25em;
+
+        img{
+            height:100%;
+            width:100%
+        }
+    }
+
+    @media screen and (min-width:415px) and (max-width:425px) {
         height:25em;
         width:32em;
         background-color:golden;
@@ -508,6 +525,11 @@ position:relative;
                 flex-direction:column;
             }
 
+            @media screen and (min-width:415px) and (max-width:425px) {
+                width: 13em;
+                flex-direction:column;
+            }
+
             @media screen and (min-width:481px) and (max-width:768px) {
                 width: 13em;
                 flex-direction:column;
@@ -540,6 +562,10 @@ position:relative;
                     @media screen and (min-width:1025px) and (max-width:1200px) {
                         font-size:40px;
                     }
+
+                    @media screen and (min-width:415px) and (max-width:425px) {
+                        font-size:20px;
+                    }
                 }
 
                 @media (max-width: 320px) {
@@ -557,6 +583,12 @@ position:relative;
                 }
 
                 @media screen and (min-width:376px) and (max-width:414px) {
+                width: 16em;
+                padding-bottom:.5rem;
+                margin-left:2.3em;
+            }
+
+            @media screen and (min-width:415px) and (max-width:425px) {
                 width: 16em;
                 padding-bottom:.5rem;
                 margin-left:2.3em;
@@ -602,6 +634,11 @@ position:relative;
                 font-size:22px;
             }
 
+            @media screen and (min-width:415px) and (max-width:425px) {
+                margin-left:9em;
+                font-size:22px;
+            }
+
             @media screen and (min-width:481px) and (max-width:768px) {
                 margin-left:9em;
                 font-size:22px;
@@ -634,6 +671,11 @@ position:relative;
 
             @media screen and (min-width:321px) and (max-width:414px) {
                 // margin-left:9em;
+                font-size:22px;
+            }
+
+            @media screen and (min-width:415px) and (max-width:425px) {
+                margin-left:.2em;
                 font-size:22px;
             }
 
@@ -672,6 +714,11 @@ position:relative;
                 font-size:22px;
             }
 
+            @media screen and (min-width:415px) and (max-width:425px) {
+                margin-left:.2em;
+                font-size:22px;
+            }
+
             @media screen and (min-width:481px) and (max-width:768px) {
                 margin-left:.2em;
                 font-size:22px;
@@ -694,6 +741,11 @@ position:relative;
                 font-weight:bolder;
                 margin-left:1rem;
                 @media screen and (min-width:321px) and (max-width:414px) {
+                    margin-left:.2em;
+                    font-size: 20px;
+                }
+
+                @media screen and (min-width:415px) and (max-width:425px) {
                     margin-left:.2em;
                     font-size: 20px;
                 }
