@@ -113,10 +113,10 @@ position:relative;
 }
 
 @media screen and (min-width:321px) and (max-width:375px) {
-    height:120vh;
+    height:140vh;
 }
 
-@media screen and (min-width:321px) and (max-width:414px) {
+@media screen and (min-width:376px) and (max-width:414px) {
     height:130vh;
 }
 
