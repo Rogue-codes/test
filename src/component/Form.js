@@ -1,21 +1,59 @@
-import React from 'react'
+import  { useState } from 'react'
 import styled from 'styled-components'
 
 const Form = () => {
+    const [values,setValues] = useState({
+        name:"",
+        email:"",
+        phoneNumber:""
+    })
+
+    const { name, email, phoneNumber} = values
+
+    const handleChange = e => {
+        setValues({...values, [e.target.name] : e.target.value})
+    }
+        
+
+
+    const handleSubmit = async e => {
+        e.preventDefault()
+
+        try {
+            const response = await fetch('https://v1.nocodeapi.com/roguecodes/google_sheets/DOaTiRxmCeoXpUCF?tabId=sheet1',{
+                method : 'POST',
+                headers : {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify([[name, email, phoneNumber]])
+
+            })
+            await response.json()
+            setValues({...values, name:'', email:"", phoneNumber:""})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+        
+
+
+
+
     return (
+        
         <StyledForm>
             <div className="formcontainer">
             <div className="register"><h1>Register to be among the first to be notified when the book launches</h1></div>
 
-            <form action="">
+            <form method ='post' autoComplete='off' name='google-sheet' onSubmit={handleSubmit}>
             <label htmlFor="" className='nameLabel'>Name</label>
-            <input type="text" name='name' className='name' required />
+            <input type="text" name='name' className='name' required  value={values.name} onChange={handleChange}/>
 
             <label htmlFor="" className='emailLabel'>Email</label>
-            <input type="text" name='email' className='name' required/>
+            <input type="text" name='email' className='name' required value={values.email} onChange={handleChange}/>
 
             <label htmlFor="" className='phoneLabel'>Phone Number</label>
-            <input type="text" name='phoneNumber' className='name' required  />
+            <input type="text" name='phoneNumber' className='name' required value={values.phoneNumber} onChange={handleChange}/>
 
             <button>SUBMIT</button>
 
@@ -168,7 +206,7 @@ const StyledForm = styled.div`
 
             @media (max-width: 480px) {
                 margin-left:.5em;
-                width:16em;
+                width:14em;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {

@@ -44,7 +44,7 @@ const Styledone = styled.section`
 background:url(${background});
 // background-color:pink;
 width:100%;
-height:120vh;
+height:90vh;
 position:relative;
 
 @media (max-width: 480px) {}
@@ -54,7 +54,7 @@ position:relative;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    height:80vh;
+    height:60vh;
 }
 
 @media screen and (min-width:1025px) and (max-width:1200px) {}
@@ -73,7 +73,7 @@ position:relative;
     @media (max-width: 480px) {
         height:10em;
         width:10em;
-        margin-left:13.47em;
+        margin-left:16.47em;
         // margin-top:15em;
 
         img{
@@ -147,9 +147,9 @@ position:relative;
 
     @media (max-width: 480px) {
         height:15em;
-        width:20em;
+        width:19em;
         background-color:golden;
-        margin-left:.8em;
+        margin-left:.6em;
         margin-top:20em;
 
         img{
@@ -254,7 +254,7 @@ position:relative;
                 font-weight:800;
                 line-height:24.4px;
                 color:rgba(205, 42, 68, 1);
-                width:16em;
+                width:24em;
                 height:auto;
                 margin-left:1em;
             }
@@ -315,7 +315,7 @@ position:relative;
                 font-size:15px;
                 font-family: 'Montserrat', sans-serif;
                 line-height:21.83px;
-                width:19em;
+                width:22em;
                 height:auto;
                 margin-left:2em;
             }
