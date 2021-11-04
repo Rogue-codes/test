@@ -355,8 +355,17 @@ position:relative;
         width:3rem;
     }
 
-    @media screen and (min-width:321px) and (max-width:414px) {
+    @media screen and (min-width:321px) and (max-width:375px) {
         margin-left:.5rem;
+        height:3rem;
+        width:2.3rem;        
+    }
+
+
+    @media screen and (min-width:376px) and (max-width:414px) {
+        margin-left:.5rem;
+        height:4rem;
+        width:3rem;
     }
 
     @media screen and (min-width:415px) and (max-width:480px) {
