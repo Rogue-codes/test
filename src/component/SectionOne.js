@@ -84,7 +84,7 @@ const SectionOne = () => {
                          </div>
                     </section>
                     <div class="stage">
-                    <button className='box bounce-7'>Register here</button>
+                    <a href="#reg"><button className='box bounce-7'>Register here</button></a>
                     </div>
                 </div>
             </div>
