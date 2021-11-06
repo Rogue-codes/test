@@ -31,6 +31,7 @@ const SectionTwo = () => {
             <div className="contain">
                 <div className="left">
                     <h1>
+                        <br /><br />
                         In this book, you will discover the most important insights you need to become a 
                         "bloody millionaire" in the tech industry.
                     </h1>

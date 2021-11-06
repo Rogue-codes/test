@@ -20,7 +20,7 @@ const Form = () => {
         
     const formRef = useRef(null)
 
-    const handleSubmit = async e => {
+    const handleSubmit = e => {
         e.preventDefault()
         setLoading(true)
 
@@ -58,7 +58,7 @@ const Form = () => {
             <div className="formcontainer" id='reg'>
             <div className="register"><h1>Register to be among the first to be notified when the book launches</h1></div>
 
-            <form method ='post' autoComplete='off' name='google-sheet' onSubmit={handleSubmit} ref={formRef}>
+            <form name='form' onSubmit={handleSubmit} ref={formRef}>
             <label htmlFor="" className='nameLabel'>Name</label>
             <input type="text" name='name' className='name' required  value={values.name} onChange={handleChange}/>
 
@@ -68,7 +68,7 @@ const Form = () => {
             <label htmlFor="" className='phoneLabel'>Phone Number</label>
             <input type="text" name='phoneNumber' className='name' required value={values.phoneNumber} onChange={handleChange}/>
 
-            <button>{loading ? "Loading..." : "SUBMIT"}</button>
+            <button type='submit'>{loading ? "Loading..." : "SUBMIT"}</button>
 
             </form>
             <Modal active={active} setActive={setActive} />
@@ -293,12 +293,12 @@ const StyledForm = styled.div`
                 width:14rem;
             }
 
-            @media screen and (min-width:321px) and (max-width:414px) {
-                margin-left:2.8em;
+            @media screen and (min-width:321px) and (max-width:375px) {
+                margin-left:1.8em;
                 width:16rem;
             }
 
-            @media screen and (min-width:414px) and (max-width:480px) {
+            @media screen and (min-width:415px) and (max-width:480px) {
                 margin-left:2.8em;
                 width:16rem;
             }

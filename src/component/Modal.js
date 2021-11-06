@@ -5,7 +5,7 @@ const Modal = ({ active, setActive }) => {
         <StyledModal className={ active ? "active" : "" }>
             <div onClick={() => setActive(!active)} className="overlay" />
             <div className="content">
-                <p>Your request has been submitted..</p> 
+                Your request has been submitted..
             </div>
         </StyledModal>
     )
