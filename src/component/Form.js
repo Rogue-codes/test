@@ -1,38 +1,50 @@
-import  { useState } from 'react'
+import  { useRef,useState } from 'react'
 import styled from 'styled-components'
+import Modal from './Modal';
 
 const Form = () => {
+    const scriptUrl = "https://script.google.com/macros/s/AKfycbxSXjrzw_lMCpy7x0zj-t-Of0lf5rqQ0CNrsmXElBxvqQ8Sp2Hu41AB4EF_g38A_s7Hmg/exec";
+    const [loading, setLoading] = useState(false)
+    const [active, setActive] = useState(false);
     const [values,setValues] = useState({
         name:"",
         email:"",
         phoneNumber:""
     })
 
-    const { name, email, phoneNumber} = values
+    // const { name, email, phoneNumber} = values
 
     const handleChange = e => {
         setValues({...values, [e.target.name] : e.target.value})
     }
         
-
+    const formRef = useRef(null)
 
     const handleSubmit = async e => {
         e.preventDefault()
+        setLoading(true)
 
-        try {
-            const response = await fetch('https://v1.nocodeapi.com/roguecodes/google_sheets/DOaTiRxmCeoXpUCF?tabId=sheet1',{
-                method : 'POST',
-                headers : {
-                    'content-type': 'application/json'
-                },
-                body: JSON.stringify([[name, email, phoneNumber]])
+        fetch(scriptUrl, { method: 'POST', body: new FormData(formRef.current) })
+        .then(res => {
+            setLoading(false)
+            setActive(true)
+        })
+        .catch(err => console.log(err))
 
-            })
-            await response.json()
-            setValues({...values, name:'', email:"", phoneNumber:""})
-        } catch (error) {
-            console.log(error)
-        }
+        // try {
+        //     const response = await fetch('https://v1.nocodeapi.com/roguecodes/google_sheets/DOaTiRxmCeoXpUCF?tabId=sheet1',{
+        //         method : 'POST',
+        //         headers : {
+        //             'content-type': 'application/json'
+        //         },
+        //         body: JSON.stringify([[name, email, phoneNumber]])
+
+        //     })
+        //     await response.json()
+        //     setValues({...values, name:'', email:"", phoneNumber:""})
+        // } catch (error) {
+        //     console.log(error)
+        // }
     }
         
 
@@ -42,10 +54,11 @@ const Form = () => {
     return (
         
         <StyledForm>
+            
             <div className="formcontainer" id='reg'>
             <div className="register"><h1>Register to be among the first to be notified when the book launches</h1></div>
 
-            <form method ='post' autoComplete='off' name='google-sheet' onSubmit={handleSubmit}>
+            <form method ='post' autoComplete='off' name='google-sheet' onSubmit={handleSubmit} ref={formRef}>
             <label htmlFor="" className='nameLabel'>Name</label>
             <input type="text" name='name' className='name' required  value={values.name} onChange={handleChange}/>
 
@@ -55,10 +68,12 @@ const Form = () => {
             <label htmlFor="" className='phoneLabel'>Phone Number</label>
             <input type="text" name='phoneNumber' className='name' required value={values.phoneNumber} onChange={handleChange}/>
 
-            <button>SUBMIT</button>
+            <button>{loading ? "Loading..." : "SUBMIT"}</button>
 
             </form>
+            <Modal active={active} setActive={setActive} />
             </div>
+            
         </StyledForm>
     )
 }

@@ -104,6 +104,7 @@ const SectionTwo = () => {
                     </div>
 
                     <Form />
+                    
 
                     <div className="book">
                         <img src={book} alt="" />
