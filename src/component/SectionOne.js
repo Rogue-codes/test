@@ -15,7 +15,7 @@ const SectionOne = () => {
     let interval = useRef()
 
     const startTimer = () => {
-        const countDownTime = new Date('November 7, 2021 00:00:00').getTime()
+        const countDownTime = new Date('November 8, 2021 00:00:00').getTime()
 
         interval = setInterval(()=>{
             const now = new Date().getTime()
@@ -68,9 +68,11 @@ const SectionOne = () => {
                         Be among the first 500 people to pre-order this book and get 60% off. Pay N2,000 instead of N5,000
                     </h1>
 
-                    <div className="offer">
-                            <p>Offer closes in</p> 
+                    <div className="offerEnds">
+                        <h2>Offer closes in 24hrs</h2>
                     </div>
+
+                    
 
                     <section>
                         <div className="first">
@@ -120,6 +122,7 @@ position:relative;
 
 @media screen and (min-width:321px) and (max-width:375px) {
     height:120vh;
+    // background-color:green;
 }
 
 @media screen and (min-width:376px) and (max-width:414px) {
@@ -135,11 +138,11 @@ position:relative;
 }
 
 @media screen and (min-width:769px) and (max-width:1024px) {
-    height:100vh;
+    height:120vh;
 }
 
 @media screen and (min-width:1025px) and (max-width:1200px) {
-    height:110vh;
+    height:120vh;
 }
 
 @media screen and (min-width:1440px) {
@@ -157,6 +160,7 @@ position:relative;
         height:10rem;
         width:10rem;
         margin-left:10rem;
+        margin-top:-4em;
         // margin-top:15em;
 
         img{
@@ -166,10 +170,10 @@ position:relative;
     }
 
     @media screen and (min-width:321px) and (max-width:375px) {
-        height:10rem;
-        width:10rem;
-        margin-left:12.97em;
-        // margin-top:15em;
+        height:12rem;
+        width:12rem;
+        margin-left:10.97em;
+        margin-top:-3em;
 
         img{
             height:100%;
@@ -179,10 +183,10 @@ position:relative;
 
 
     @media screen and (min-width:376px) and (max-width:414px) {
-        height:10rem;
-        width:10rem;
-        margin-left:15.97em;
-        // margin-top:15em;
+        height:12rem;
+        width:12rem;
+        margin-left:13.97em;
+        margin-top:-4em;
 
         img{
             height:100%;
@@ -203,9 +207,10 @@ position:relative;
     }
 
     @media screen and (min-width:415px) and (max-width:425px) {
-        height:10rem;
-        width:10rem;
-        margin-left:16.47em;
+        height:14rem;
+        width:14rem;
+        margin-left:12.47em;
+        margin-top:-9em;
         // margin-top:15em;
 
         img{
@@ -427,9 +432,19 @@ position:relative;
 }
 
 .container{
-    width:80em;
-    display:flex;
-    @media (max-width: 480px) {
+    width:100%;
+    // display:flex;
+    @media (max-width: 320px) {
+        max-width:100%;
+    }
+    @media screen and (min-width:321px) and (max-width:375px) {
+        max-width:100%;
+        // display:none;
+    }
+    @media screen and (min-width:376px) and (max-width:414px) {
+        max-width:100%;
+    }
+    @media screen and (min-width:416px) and (max-width:480px) {
         max-width:100%;
     }
     @media screen and (min-width:481px) and (max-width:768px) {
@@ -448,6 +463,52 @@ position:relative;
 
     .left{
         // background-color:green;
+
+        .offerEnds{
+            max-width:15rem;
+            margin-left:5rem;
+            @media (max-width: 320px) {
+                max-width:15rem;
+                margin:auto;
+            }
+            @media screen and (min-width:321px) and (max-width:375px) {
+                max-width:15rem;
+                margin:auto;
+            }
+            @media screen and (min-width:376px) and (max-width:414px) {
+                max-width:15rem;
+                margin:auto;
+            }
+            @media screen and (min-width:415px) and (max-width:480px) {
+                max-width:15rem;
+                margin:auto;
+            }
+            @media screen and (min-width:481px) and (max-width:768px) {
+                max-width:15rem;
+                margin-left:1rem;
+            }
+            @media screen and (min-width:769px) and (max-width:1024px) {
+                max-width:15rem;
+                margin-left:1rem;
+            }
+            @media screen and (min-width:1025px) and (max-width:1200px) {
+                max-width:15rem;
+                margin-left:1rem;
+            }
+            @media (min-width: 1441px) {
+                max-width:15rem;
+                margin-left:3.2rem;
+            }
+
+
+            h2{
+                font-size:20px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight:400;
+                line-height:44.2px;
+                color:rgba(205, 42, 68, 1);
+            }
+        }
 
         h1{
             font-size:40px;
@@ -475,9 +536,10 @@ position:relative;
                 font-weight:800;
                 line-height:24.4px;
                 color:rgba(205, 42, 68, 1);
-                width:22rem;
+                width:20rem;
                 height:auto;
                 margin-left:1rem;
+                // display:none;
             }
 
             @media screen and (min-width:376px) and (max-width:414px) {
@@ -553,7 +615,7 @@ position:relative;
             line-height:64.2px;
             color:rgba(205, 42, 68, 1);
             width:20em;
-            margin-left:2em;
+            margin-left:1em;
             }
         }
 
@@ -575,6 +637,7 @@ position:relative;
                 flex-direction:row;
                 // margin-left:1rem;
                 margin:auto;
+                // display:none;
             }
 
             @media screen and (min-width:376px) and (max-width:414px) {
@@ -592,9 +655,10 @@ position:relative;
             }
 
             @media screen and (min-width:426px) and (max-width:480px) {
-                width: 13em;
+                max-width: 13em;
                 flex-direction:row;
-                margin-left:1rem;
+                // margin-left:1rem;
+                margin:auto;
             }
 
             @media screen and (min-width:481px) and (max-width:768px) {
@@ -612,85 +676,13 @@ position:relative;
             @media screen and (min-width:1025px) and (max-width:1200px) {
                 width: 13em;
                 flex-direction:row;
-            }
-
-            .offer{
-                
-                width: 83em;
-                margin-left:-19em;
-                margin-bottom:1rem;
-
-                p{
-                    text-align:center;
-                    font-size:30px;
-
-                    @media screen and (min-width:481px) and (max-width:768px) {
-                        font-size:20px;
-                    }
-
-                    @media screen and (min-width:1025px) and (max-width:1200px) {
-                        font-size:40px;
-                    }
-
-                    @media screen and (min-width:415px) and (max-width:425px) {
-                        font-size:20px;
-                    }
-
-                    @media screen and (min-width:426px) and (max-width:480px) {
-                        font-size:20px;
-                    }
-                }
-
-                @media (max-width: 320px) {
-                    width: 1em;
-                    // flex-direction:column;
-                    margin-left:-14em;
-                    // margin:auto;
-                    // display:none;
-                }
-
-                @media screen and (min-width:321px) and (max-width:375px) {
-                    width: 16em;
-                padding-bottom:.5rem;
-                margin-left:.3em;
-                }
-
-                @media screen and (min-width:376px) and (max-width:414px) {
-                width: 16em;
-                padding-bottom:.5rem;
-                margin-left:2.3em;
-            }
-
-            @media screen and (min-width:415px) and (max-width:425px) {
-                width: 16em;
-                padding-bottom:.5rem;
-                margin-left:2.3em;
-            }
-
-            @media screen and (min-width:426px) and (max-width:480px) {
-                width: 16em;
-                padding-bottom:.5rem;
-                margin-left:2.3em;
-            }
-
-            @media screen and (min-width:481px) and (max-width:768px) {
-                width: 26em;
-                margin-left:.3em;
-                margin-bottom:1rem;
-            }
-
-            @media screen and (min-width:769px) and (max-width:1024px) {
-                width: 32em;
-                margin-left:.3em;
-                margin-bottom:1rem;
-            }
-
-            @media screen and (min-width:1025px) and (max-width:1200px) {
-                width: 75em;
-                margin-left:.3em;
-                margin-bottom:1rem;
-            }
-                    
+                margin-left:1rem;
+            } 
+            @media (min-width: 1441px) {
+                width: 13em;
+                flex-direction:row;
+                margin-left:3.2rem;
+            }      
             }
 
             }
@@ -752,7 +744,7 @@ position:relative;
             }
 
             @media screen and (min-width:1025px) and (max-width:1200px) {
-                margin-left:6em;
+                margin-left:0;
                 font-size:32px;
             }
 
@@ -1016,7 +1008,7 @@ position:relative;
                 transform-origin: bottom;
                 height:3em;
                 width:14em;
-                margin-left:4em;
+                margin-left:3.5em;
                 margin-top:2em;
                 margin-bottom:2em;
                 border-radius:5px;
@@ -1038,7 +1030,7 @@ position:relative;
                     font-size:16px;
                     height:2.5em;
                     margin-left:2em;
-                    margin-top:12em;
+                    margin-top:1em;
                 }
 
                 @media (max-width: 320px) {
@@ -1050,13 +1042,33 @@ position:relative;
                     margin-bottom:10em;
                 }
 
-                @media screen and (min-width:321px) and (max-width:414px) {
+                @media screen and (min-width:321px) and (max-width:375px) {
                     max-width:10em;
                     font-size:14px;
                     height:2.5em;
                     margin:auto;
-                    margin-top:5em;
+                    margin-top:2em;
                     margin-bottom:8em;
+                }
+                @media screen and (min-width:376px) and (max-width:414px) {
+                    max-width:10em;
+                    font-size:14px;
+                    height:2.5em;
+                    margin:auto;
+                    margin-top:2em;
+                    margin-bottom:8em;
+                }
+                @media screen and (min-width:415px) and (max-width:480px) {
+                    max-width:10em;
+                    font-size:14px;
+                    height:2.5em;
+                    margin:auto;
+                    margin-top:2em;
+                    margin-bottom:8em;
+                }
+                @media (min-width: 1441px) {
+                    margin-left:3.2rem;
+                    margin-top:1em;
                 }
                 
             }
