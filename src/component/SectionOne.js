@@ -855,6 +855,7 @@ position:relative;
                 font-size: 40px;
                 margin-top:-3rem;
                 font-weight:bolder;
+                color:rgba(205, 42, 68, 1);
                 margin-left:1rem;
                 @media screen and (min-width:321px) and (max-width:414px) {
                     margin-left:.2em;
@@ -896,6 +897,7 @@ position:relative;
                 font-size: 30px;
                 font-weight:bolder;
                 margin-left:.5rem;
+                color:rgba(205, 42, 68, 1);
 
                 @media (max-width: 320px) {
                     // margin-left:.12em;
@@ -907,6 +909,7 @@ position:relative;
                 font-size: 30px;
                 font-weight:bolder;
                 margin-left:1.5rem;
+                color:rgba(205, 42, 68, 1);
 
                 @media (max-width: 320px) {
                     // margin-left:.12em;
