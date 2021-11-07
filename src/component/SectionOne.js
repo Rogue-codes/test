@@ -15,7 +15,7 @@ const SectionOne = () => {
     let interval = useRef()
 
     const startTimer = () => {
-        const countDownTime = new Date('November 8, 2021 00:00:00').getTime()
+        const countDownTime = new Date('November 9, 2021 00:00:00').getTime()
 
         interval = setInterval(()=>{
             const now = new Date().getTime()
