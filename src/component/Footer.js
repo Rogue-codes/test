@@ -16,7 +16,7 @@ const Footer = () => {
 export default Footer
 
 const StyledFooter = styled.footer`
-margin-top:50vh;
+margin-top:35vh;
 .foot{
     max-width:323px;
     margin:auto;

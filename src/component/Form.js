@@ -56,7 +56,7 @@ const Form = () => {
         <StyledForm>
             
             <div className="formcontainer" id='reg'>
-            <div className="register"><h1>Register to be among the first to be notified when the book launches</h1></div>
+            <div className="register"><p>Join the waiting list to be among the first to be notified when the book launch</p></div>
 
             <form name='form' onSubmit={handleSubmit} ref={formRef}>
             <label htmlFor="" className='nameLabel'>Name</label>
@@ -114,7 +114,7 @@ const StyledForm = styled.div`
     @media screen and (min-width:1025px) and (max-width:1200px) {}
 
     .register{
-        max-width:24.31em;
+        max-width:22.81em;
         margin:auto;
         height:auto;
 
@@ -132,19 +132,22 @@ const StyledForm = styled.div`
 
 
 
-        h1{
-            padding-top:1.75em;
-            font-size: 20px;
-            Line height:25.6px;
-            color:rgba(255, 255, 255, 1);
-            font-weight:800;
+        p{
             font-family: 'Montserrat', sans-serif;
+            padding-top:1.5rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 106%;
+            text-align: center;
+            color: #FFFFFF;
+
 
             @media screen and (min-width:769px) and (max-width:1024px) {
                 padding-top:1.75em;
-                font-size: 14px;
+                font-size: 16px;
                 text-align:center;
-                Line height:25.6px;
+                Line-height:25.6px;
                 color:rgba(255, 255, 255, 1);
                 font-weight:800;
                 font-family: 'Montserrat', sans-serif;
@@ -158,7 +161,7 @@ const StyledForm = styled.div`
             @media (max-width: 320px) {
                 padding-top:35px;
                 font-size: 14px;
-                Line height:20.72px;
+                Line-height:20.72px;
                 color:rgba(255, 255, 255, 1);
                 font-weight:600;
                 font-family: 'Montserrat', sans-serif;
@@ -232,8 +235,7 @@ const StyledForm = styled.div`
 
         .name{
             height:2em;
-            width:18em;
-            margin-left:1.5em;
+            width:28rem;
             border-radius:5px;
             border:none;
             outline:none;
@@ -266,16 +268,15 @@ const StyledForm = styled.div`
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
-                margin-left:.5em;
-                width:18em;
+                margin-left:0em;
+                width:20em;
             }
         }
 
 
         button{
             height:3em;
-            width:14em;
-            margin-left:4em;
+            width:28rem;
             margin-top:2em;
             margin-bottom:2em;
             border-radius:5px;
@@ -298,13 +299,19 @@ const StyledForm = styled.div`
                 width:16rem;
             }
 
+            @media screen and (min-width:376px) and (max-width:414px) {
+                margin-left:2.8em;
+                width:16rem;
+            }
+
             @media screen and (min-width:415px) and (max-width:480px) {
                 margin-left:2.8em;
                 width:16rem;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
-                margin-left:2.5em;
+                margin-left:4.5em;
+                width:16rem;
             }
 
             
