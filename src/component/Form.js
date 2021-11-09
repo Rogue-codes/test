@@ -81,7 +81,6 @@ const Form = () => {
 export default Form
 
 const StyledForm = styled.div`
-// background-color:grey;
 .formcontainer{
     height:686px;
     background-color:rgba(205, 42, 68, 1);
@@ -89,30 +88,30 @@ const StyledForm = styled.div`
     margin:auto;
     margin-top:-1rem;
 
-    @media (max-width: 320px) {
+    @media (max-width: 480px) {
         max-width:90%;
-        margin-top 4em;
+        margin-top:-1rem;
     }
 
-    @media screen and (min-width:321px) and (max-width:375px) {
-        max-width:90%;
-        margin-top -1rem;
-    }
+    // @media screen and (min-width:321px) and (max-width:375px) {
+    //     max-width:100%;
+    //     margin-top -1rem;
+    // }
 
-    @media screen and (min-width:376px) and (max-width:414px) {
-        max-width:90%;
-        margin-top -1rem;
-    }
+    // @media screen and (min-width:376px) and (max-width:414px) {
+    //     max-width:90%;
+    //     margin-top -1rem;
+    // }
 
-    @media screen and (min-width:415px) and (max-width:425px) {
-        max-width:90%;
-        margin-top -1.9rem;
-    }
+    // @media screen and (min-width:415px) and (max-width:425px) {
+    //     max-width:90%;
+    //     margin-top -1.9rem;
+    // }
 
-    @media screen and (min-width:426px) and (max-width:480px) {
-        max-width:90%;
-        margin-top -1.9rem;
-    }
+    // @media screen and (min-width:426px) and (max-width:480px) {
+    //     max-width:90%;
+    //     margin-top -1.9rem;
+    // }
     
     @media screen and (min-width:481px) and (max-width:768px) {
         margin-top 2em;
@@ -130,23 +129,23 @@ const StyledForm = styled.div`
         margin:auto;
         height:auto;
 
-        @media (max-width: 320px) {
+        @media (max-width: 480px) {
             max-width:24.31em;
             height:63px;
-            margin-left:1em;
-        }
-
-        @media screen and (min-width:321px) and (max-width:414px) {
-            max-width:24.31em;
-            height:63px;
-            margin-left:0em;
-        }
-
-        @media screen and (min-width:415px) and (max-width:425px) {
-            max-width:18.18rem;
-            height:34px;
             margin:auto;
         }
+
+        // @media screen and (min-width:321px) and (max-width:414px) {
+        //     max-width:24.31em;
+        //     height:63px;
+        //     margin-left:0em;
+        // }
+
+        // @media screen and (min-width:415px) and (max-width:425px) {
+        //     max-width:18.18rem;
+        //     height:34px;
+        //     margin:auto;
+        // }
 
 
 
@@ -171,18 +170,18 @@ const StyledForm = styled.div`
                 font-family: 'Montserrat', sans-serif;
             }
 
-            @media screen and (min-width:321px) and (max-width:414px) {
-                text-align:center;
-                font-size: 18px;
-            }
+            // @media screen and (min-width:321px) and (max-width:414px) {
+            //     text-align:center;
+            //     font-size: 18px;
+            // }
 
-            @media screen and (min-width:415px) and (max-width:425px) {
-                text-align:center;
-                font-size: 15px;
-                Line-height:17px;
-            }
+            // @media screen and (min-width:415px) and (max-width:425px) {
+            //     text-align:center;
+            //     font-size: 15px;
+            //     Line-height:17px;
+            // }
 
-            @media (max-width: 320px) {
+            @media (max-width: 480px) {
                 padding-top:35px;
                 font-size: 14px;
                 Line-height:20.72px;
@@ -196,7 +195,6 @@ const StyledForm = styled.div`
 
     form{
         max-width:80%;
-        // background-color:orange;
         margin: auto;
         height:auto;
 
@@ -262,7 +260,7 @@ const StyledForm = styled.div`
 
         .name{
             height:2em;
-            width:28rem;
+            max-width:28rem;
             border-radius:5px;
             background: #E0E0E0;
             border:none;
@@ -271,30 +269,18 @@ const StyledForm = styled.div`
             padding-left:10px;
             font-family: 'Montserrat', sans-serif;
 
-            @media (max-width: 320px) {
-                margin-left:1rem;
-                width:15rem;
-                font-size:18px;
-            }
-
-            @media screen and (min-width:321px) and (max-width:375px) {
-                margin-left:1rem;
-                width:18rem;
-                font-size:18px;
-                height:2.8rem;
-            }
-
-            @media screen and (min-width:376px) and (max-width:414px) {
+            @media screen and (max-width:320px) {
                 margin-left:1.4rem;
-                width:20rem;
+                max-width:14.9rem;
                 font-size:18px;
             }
 
-            @media screen and (min-width:414px) and (max-width:480px) {
-                margin-left:1.65rem;
-                width:18.8rem;
+            
+
+            @media screen and (max-width:480px) {
+                margin-left:1.2rem;
+                width:85%;
                 font-size:18px;
-                height:2.8rem;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
@@ -323,24 +309,10 @@ const StyledForm = styled.div`
             font-family: proxima-nova, sans-serif;
             cursor:pointer;
 
-            @media (max-width: 320px) {
-                margin-left:2em;
-                width:14rem;
-            }
-
-            @media screen and (min-width:321px) and (max-width:375px) {
-                margin-left:1.8em;
-                width:16rem;
-            }
-
-            @media screen and (min-width:376px) and (max-width:414px) {
-                margin-left:2.8em;
-                width:16rem;
-            }
-
-            @media screen and (min-width:415px) and (max-width:480px) {
-                margin-left:2.8em;
-                width:16rem;
+            @media screen and (max-width: 480px) {
+                margin-left:4.2rem;
+               
+                max-width:60%;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
