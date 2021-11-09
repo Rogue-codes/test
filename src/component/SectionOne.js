@@ -155,8 +155,6 @@ position:relative;
 
 .picture{
     position:absolute;
-    // margin-left:38em;
-    // margin-top:-2em;
     height:40rem;
     width:50rem;
     // background-color:red;
