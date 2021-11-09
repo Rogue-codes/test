@@ -31,7 +31,7 @@ const SectionTwo = () => {
             <div className="contain">
                 <div className="left">
                     <h1>
-                        <br /><br />
+                        <br />
                         In this book, you will discover the most important insights you need to become a 
                         "bloody millionaire" in the tech industry.
                     </h1>
@@ -63,7 +63,7 @@ const SectionTwo = () => {
                         </ul>
                     </div>
 
-                    <div className="head">
+                    <div className="head2">
                         <h1>Extra benefits of getting "The Blood Money in Tech"</h1>
                     </div>
 
@@ -122,7 +122,6 @@ position:relative;
 
 
 .contain{
-    // background-color:gold;
     max-width:100%;
     margin:auto;
     padding-bottom: 7.4rem;
@@ -162,7 +161,7 @@ position:relative;
             font-weight: 600;
             font-size: 36px;
             font-family: 'Montserrat', sans-serif;
-            line-height:44.2px;
+            line-height:48px;
             color:rgba(205, 42, 68, 1);
             width:35em;
             margin-left:6.3rem;
@@ -177,21 +176,21 @@ position:relative;
             @media (max-width: 320px) {
                 width:19rem;
                 line-height:34.2px;
-                font-size:20px;
+                font-size:18px;
                 margin-left:1rem;
             }
 
             @media screen and (min-width:321px) and (max-width:375px) {
                 width:21rem;
                 line-height:34.2px;
-                font-size:20px;
+                font-size:18px;
                 margin-left:1rem;
             }
 
             @media screen and (min-width:376px) and (max-width:414px) {
                 width:24rem;
                 line-height:34.2px;
-                font-size:20px;
+                font-size:18px;
                 margin-left:1rem;
             }
 
@@ -203,7 +202,7 @@ position:relative;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
-                width:65rem;
+                width:61rem;
                 line-height:44.2px;
                 font-size:30px;
                 margin-left:2.5rem;
@@ -214,16 +213,22 @@ position:relative;
                 font-size:30px;
                 margin-left:2.5rem;
             }
+            @media screen and (min-width:1441px){
+                width:85rem;
+                line-height:44.2px;
+                font-size:40px;
+            }
         }
 
         p{
-            font-size:24px;
+            font-size:22px;
             font-family: 'Montserrat', sans-serif;
             font-weight:500;
-            line-height:33.12px;
-            color:rgba(10, 18, 42, 1);
+            line-height: 133.5%;
+            color: #0A122A;
             width: 42em;
             margin-left:6.3rem;
+            margin-top:-1.12rem;
 
             @media screen and (min-width:481px) and (max-width:768px) {
                 width:45rem;
@@ -231,6 +236,12 @@ position:relative;
                 font-size:20px;
                 margin-left:2.5rem;
                 font-size:18px;
+            }
+
+            @media screen and (min-width:1441px){
+                width:85rem;
+                line-height:44.2px;
+                font-size:30px;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
@@ -250,21 +261,21 @@ position:relative;
             @media (max-width: 320px) {
                 width:19rem;
                 line-height:34.2px;
-                font-size:14px;
+                font-size:16px;
                 margin-left:1rem;
             }
 
             @media screen and (min-width:321px) and (max-width:375px) {
                 width:21rem;
                 line-height:34.2px;
-                font-size:18px;
+                font-size:16px;
                 margin-left:1rem;
             }
 
             @media screen and (min-width:376px) and (max-width:414px) {
                 width:24rem;
                 line-height:34.2px;
-                font-size:20px;
+                font-size:16px;
                 margin-left:1rem;
             }
 
@@ -322,7 +333,8 @@ position:relative;
         width:28em;
         height:4.25em;
         margin-left:6.3rem;
-        margin-top: 3.1em;
+        margin-top: -3.1em;
+        // background-color:green;
 
         @media (max-width: 320px) {
             width:18rem;
@@ -334,6 +346,122 @@ position:relative;
         @media screen and (min-width:321px) and (max-width:375px) {
             width:20rem;
             height:2.25em;
+            margin-left:1.15em;
+            margin-top: 2.1em;
+            margin-bottom: 3.6em;
+        }
+
+        @media screen and (min-width:376px) and (max-width:414px) {
+            width:24.2rem;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 1.1em;
+        }
+
+        // @media screen and (min-width:415px) and (max-width:425px) {
+        //     width:24.2rem;
+        //     height:2.25em;
+        //     margin-left:1.15em;
+        //     margin-top: .7em;
+        // }
+
+        @media screen and (min-width:415px) and (max-width:480px) {
+            width:22.2rem;
+            height:2.25em;
+            margin-left:2.5em;
+            margin-top: 1.1em;
+        }
+
+        @media screen and (min-width:481px) and (max-width:768px) {
+            width:40em;
+            height:2.25em;
+            margin-left:2.5rem;
+            margin-top: 1.1em;
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            width:30em;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:1025px) and (max-width:1200px) {
+            margin-top: -2.1em;
+            margin-left:2.5rem;
+        }
+
+        @media screen and (min-width:1441px) {
+            width:30em;
+            height:4.25em;
+            margin-left:2.5em;
+            margin-top: 1.1em;
+        }
+
+        h1{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 37px;
+            color: rgba(10, 18, 42, 1);
+
+            @media (max-width: 320px) {
+                font-size: 20px;
+            }
+
+            @media screen and (min-width:321px) and (max-width:375px) {
+                font-size: 24px;
+                line-height: 27px;
+            }
+
+            @media screen and (min-width:376px) and (max-width:414px) {
+                font-size: 24px;
+                line-height: 27px;
+            }
+
+            @media screen and (min-width:415px) and (max-width:480px) {
+                font-size: 24px;
+                line-height: 27px;
+            }
+            @media screen and (min-width:1441px){
+                font-size: 34px;
+            }
+
+            
+        }
+
+
+        
+
+        @media screen and (min-width:481px) and (max-width:768px) {}
+
+        @media screen and (min-width:769px) and (max-width:1024px) {}
+
+        @media screen and (min-width:1025px) and (max-width:1200px) {}
+
+        @media screen and (min-width:1201px) and (max-width:1440px) {} 
+        @media screen and (min-width:1441px) {
+            font-size: 40px;
+        } 
+    }
+
+    .head2{
+        width:28em;
+        height:4.25em;
+        margin-left:6.3rem;
+        margin-top: 1.4rem;
+
+        @media (max-width: 320px) {
+            width:18rem;
+            height:2.25em;
+            margin-left:1.15em;
+            margin-top: 3.1em;
+        }
+
+        @media screen and (min-width:321px) and (max-width:375px) {
+            width:20rem;
+            height:3.75rem;
             margin-left:1.15em;
             margin-top: 2.1em;
         }
@@ -374,14 +502,14 @@ position:relative;
         }
 
         @media screen and (min-width:1025px) and (max-width:1200px) {
-            margin-top: 3.1em;
+            margin-top: .5rem;
             margin-left:2.5rem;
         }
 
         @media screen and (min-width:1441px) {
             width:30em;
             height:4.25em;
-            margin-left:1.25em;
+            margin-left:2.5em;
             margin-top: 1.1em;
         }
 
@@ -398,18 +526,21 @@ position:relative;
             }
 
             @media screen and (min-width:321px) and (max-width:375px) {
-                font-size: 20px;
-                line-height: 27px;
+                font-size: 24px;
+                line-height: 30px;
             }
 
             @media screen and (min-width:376px) and (max-width:414px) {
-                font-size: 25px;
+                font-size: 24px;
                 line-height: 27px;
             }
 
             @media screen and (min-width:415px) and (max-width:480px) {
-                font-size: 20px;
+                font-size: 24px;
                 line-height: 27px;
+            }
+            @media screen and (min-width:1441px){
+                font-size: 34px;
             }
 
             
@@ -432,9 +563,9 @@ position:relative;
 
     .list{
         height:auto;
-        width:32.62em;
-        margin-left:6.3rem;
-        margin-top:2.8em;
+        width:35.62em;
+        margin-left:10.3rem;
+        margin-top:1.12rem;
 
         @media (max-width: 320px) {
             width:20rem;
@@ -445,7 +576,7 @@ position:relative;
         }
 
         @media screen and (min-width:321px) and (max-width:375px) {
-            width:23rem;
+            width:21rem;
             height:auto;
             margin-left:-1rem;
             margin-top: 1.1em;
@@ -469,7 +600,7 @@ position:relative;
         @media screen and (min-width:481px) and (max-width:768px) {
             width:40em;
             margin-left:1.15em;
-            margin-top: 3.1em;
+            margin-top: 3.15em;
         }
 
         @media screen and (min-width:769px) and (max-width:1024px) {
@@ -479,14 +610,13 @@ position:relative;
         }
 
         @media screen and (min-width:1025px) and (max-width:1200px) {
-            margin-left: .15em;
+            margin-left: 1.15em;
             margin-top:1.8em;
         }
 
         @media screen and (min-width:1441px) {
             margin-top:-4em;
             width:50em;
-            margin-left: 2em;
         }
 
         ul{
@@ -499,32 +629,37 @@ position:relative;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 22px;
+                color: #524C4C;
                 height:4.43em;
 
                 @media (max-width: 320px) {
                     font-family: Montserrat;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 14px;
+                    font-size: 17px;
                     line-height: 25.5px;
-                    height:4.43em;
+                    height:5.06rem;
                     padding-top:2em;
         
                 }
                 @media screen and (min-width:321px) and (max-width:375px) {
-                    font-size: 14px;
+                    font-size: 17px;
+                    height:5.06rem;
                 }
                 @media screen and (min-width:376px) and (max-width:414px) {
-                    font-size: 14px;
+                    font-size: 17px;
+                    height:5.06rem;
                 }
                 @media screen and (min-width:415px) and (max-width:425px) {
-                    font-size: 16px;
+                    font-size: 17px;
+                    height:5.06rem;
                 }
             }
         }
         .banj{
             @media (max-width: 480px) {
                 padding-bottom:40px;
+                padding-top:20px;
             }
         }
         li::before {
@@ -536,8 +671,8 @@ position:relative;
     }
 
     .last{
-        width:33.68em;
-        margin-left:5em;
+        width:22.68em;
+        margin-left:12.3rem;
         height:auto;
 
         @media (max-width: 320px) {
@@ -574,6 +709,12 @@ position:relative;
             margin-top: 3.1em;
         }
 
+        @media screen and (min-width:1025px) and (max-width:1200px) {
+            width:30em;
+            margin-left: 2.15rem;
+            margin-top: 3.1em;
+        }
+
         @media screen and (min-width:1441px) {
             width:50em;
         }
@@ -590,7 +731,7 @@ position:relative;
                 font-style: normal;
                 font-weight: 800;
                 font-size: 14px;
-                line-height: 150%;
+                line-height: 21px;
                 color: #524C4C;
     
             }
@@ -599,14 +740,41 @@ position:relative;
 }
 .right{
     flex:6;
+    margin-left:6.25rem;
+
+    @media screen and (min-width:321px){
+        margin-left:0rem;
+    }
+    @media screen and (min-width:1025px) and (max-width:1280px) {
+        margin-left:3.13rem;
+    }
+    @media screen and (min-width:769px) and (max-width:1024px) {
+        margin-left:0rem;  
+    }
+    @media screen and (min-width:415px) and (max-width:425px) {
+        margin-left:0rem;  
+    }
+    @media screen and (min-width:376px) and (max-width:414px) {
+        margin-left:0rem;  
+    }
+    @media screen and (min-width:321px) and (max-width:375px) {
+        margin-left:0rem;  
+    }
+    @media screen and (max-width:320px){
+        margin-left:0rem;  
+    }
 
     .launch{
-        padding-top:8rem;
-        padding-bottom:4rem;
+        padding-top:1rem;
+        padding-bottom:2.6rem;
         max-width:22.5rem;
         margin:auto;
         height:4.3rem;
         @media (max-width: 320px) {
+            padding-top:4rem;
+            padding-bottom:1rem;
+        }
+        @media screen and (min-width:321px) and (max-width:375px) {
             padding-top:4rem;
             padding-bottom:1rem;
         }
@@ -622,6 +790,23 @@ position:relative;
                 font-size: 20px;
                 line-height: 123.5%;
             }
+            @media screen and (min-width:321px) and (max-width:375px) {
+                font-size: 18px;
+                line-height: 123.5%;
+            }
+            @media screen and (min-width:376px) and (max-width:414px) {
+                font-size: 18px;
+                line-height: 123.5%;
+            }
+            @media screen and (min-width:415px) and (max-width:425px) {
+                font-size: 18px;
+                line-height: 123.5%;
+            }
+            @media screen and (min-width:426px) and (max-width:480px) {
+                font-size: 18px;
+                line-height: 123.5%;
+            }
+            
 
             .date{
                 color:#f58598;
@@ -695,10 +880,10 @@ position:relative;
             }
         }
     
-        @media screen and (min-width:1025px) and (max-width:1200px) {
+        @media screen and (min-width:1025px) and (max-width:1280px) {
 
             background-color:golden;
-            margin-left:13em;
+            margin-left:10em;
             margin-top:-6em;
     
             img{

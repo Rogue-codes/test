@@ -87,20 +87,31 @@ const StyledForm = styled.div`
     background-color:rgba(205, 42, 68, 1);
     max-width:539px;
     margin:auto;
+    margin-top:-1rem;
 
     @media (max-width: 320px) {
         max-width:90%;
         margin-top 4em;
     }
 
-    @media screen and (min-width:321px) and (max-width:414px) {
+    @media screen and (min-width:321px) and (max-width:375px) {
         max-width:90%;
-        margin-top 4em;
+        margin-top -1rem;
     }
 
-    @media screen and (min-width:415px) and (max-width:480px) {
+    @media screen and (min-width:376px) and (max-width:414px) {
         max-width:90%;
-        margin-top 4em;
+        margin-top -1rem;
+    }
+
+    @media screen and (min-width:415px) and (max-width:425px) {
+        max-width:90%;
+        margin-top -1.9rem;
+    }
+
+    @media screen and (min-width:426px) and (max-width:480px) {
+        max-width:90%;
+        margin-top -1.9rem;
     }
     
     @media screen and (min-width:481px) and (max-width:768px) {
@@ -109,12 +120,13 @@ const StyledForm = styled.div`
 
     @media screen and (min-width:769px) and (max-width:1024px) {
         margin-top 4em;
+        max-width:90%;
     }
 
     @media screen and (min-width:1025px) and (max-width:1200px) {}
 
     .register{
-        max-width:22.81em;
+        max-width:27.81em;
         margin:auto;
         height:auto;
 
@@ -130,14 +142,20 @@ const StyledForm = styled.div`
             margin-left:0em;
         }
 
+        @media screen and (min-width:415px) and (max-width:425px) {
+            max-width:18.18rem;
+            height:34px;
+            margin:auto;
+        }
+
 
 
         p{
-            font-family: 'Montserrat', sans-serif;
-            padding-top:1.5rem;
+            font-family: proxima-nova, sans-serif;
             font-style: normal;
             font-weight: 600;
-            font-size: 16px;
+            padding-top:1.5rem;
+            font-size: 20px;
             line-height: 106%;
             text-align: center;
             color: #FFFFFF;
@@ -156,6 +174,12 @@ const StyledForm = styled.div`
             @media screen and (min-width:321px) and (max-width:414px) {
                 text-align:center;
                 font-size: 18px;
+            }
+
+            @media screen and (min-width:415px) and (max-width:425px) {
+                text-align:center;
+                font-size: 15px;
+                Line-height:17px;
             }
 
             @media (max-width: 320px) {
@@ -182,16 +206,17 @@ const StyledForm = styled.div`
 
 
         .nameLabel{
-            font-family: 'Poppins', sans-serif;
+            font-family: proxima-nova, sans-serif;
             display:block;
             color:white;
-            margin-bottom:.5em;
+            margin-bottom:1.3rem;
             margin-top:46px;
-            margin-left:39px;
+            margin-left:.2rem;
 
             @media (max-width: 480px) {
-                margin-left:20px;
-                margin-top:70px;
+                margin-top:2.5rem;
+                margin-left:1.65rem;
+                font-size:15px;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
@@ -200,15 +225,16 @@ const StyledForm = styled.div`
         }
 
         .emailLabel{
-            font-family: 'Poppins', sans-serif;
+            font-family: proxima-nova, sans-serif;
             display:block;
             color:white;
-            margin-bottom:.5em;
+            margin-bottom:1.3rem;
             margin-top:22px;
-            margin-left:39px;
+            margin-left:.2rem;
 
             @media (max-width: 480px) {
-                margin-left:20px;
+                margin-left:1.65rem;
+                font-size:15px;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
@@ -217,15 +243,16 @@ const StyledForm = styled.div`
         }
 
         .phoneLabel{
-            font-family: 'Poppins', sans-serif;
+            font-family: proxima-nova, sans-serif;
             display:block;
             color:white;
-            margin-bottom:.5em;
+            margin-bottom:1.3rem;
             margin-top:22px;
-            margin-left:39px;
+            margin-left:.2rem;
 
             @media (max-width: 480px) {
-                margin-left:20px;
+                margin-left:1.65rem;
+                font-size:15px;
             }
             @media screen and (min-width:769px) and (max-width:1024px) {
                 margin-left:.9em;
@@ -237,6 +264,7 @@ const StyledForm = styled.div`
             height:2em;
             width:28rem;
             border-radius:5px;
+            background: #E0E0E0;
             border:none;
             outline:none;
             font-size:20px;
@@ -253,6 +281,7 @@ const StyledForm = styled.div`
                 margin-left:1rem;
                 width:18rem;
                 font-size:18px;
+                height:2.8rem;
             }
 
             @media screen and (min-width:376px) and (max-width:414px) {
@@ -262,12 +291,18 @@ const StyledForm = styled.div`
             }
 
             @media screen and (min-width:414px) and (max-width:480px) {
-                margin-left:1.4rem;
-                width:20rem;
+                margin-left:1.65rem;
+                width:18.8rem;
                 font-size:18px;
+                height:2.8rem;
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
+                margin-left:0em;
+                width:17em;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1280px) {
                 margin-left:0em;
                 width:20em;
             }
@@ -282,11 +317,10 @@ const StyledForm = styled.div`
             border-radius:5px;
             border:none;
             background-color:rgba(10, 18, 42, 1);
-            color:rgba(255, 255, 255, 1);
+            color:#ffff;
             font-size:20px;
-            line-height:21.2px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight:600;
+            line-height:21px;
+            font-family: proxima-nova, sans-serif;
             cursor:pointer;
 
             @media (max-width: 320px) {
@@ -310,8 +344,13 @@ const StyledForm = styled.div`
             }
 
             @media screen and (min-width:769px) and (max-width:1024px) {
-                margin-left:4.5em;
+                margin-left:2.5rem;
                 width:16rem;
+            }
+
+            @media screen and (min-width:1025px) and (max-width:1280px) {
+                margin-left:0em;
+                width:20em;
             }
 
             
