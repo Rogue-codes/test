@@ -64,7 +64,7 @@ position:relative;
 }
 
 @media (max-width: 480px) {
-    height:120vh;
+    height:150vh;
 }
 
 
