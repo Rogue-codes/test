@@ -93,25 +93,6 @@ const StyledForm = styled.div`
         margin-top:-1rem;
     }
 
-    // @media screen and (min-width:321px) and (max-width:375px) {
-    //     max-width:100%;
-    //     margin-top -1rem;
-    // }
-
-    // @media screen and (min-width:376px) and (max-width:414px) {
-    //     max-width:90%;
-    //     margin-top -1rem;
-    // }
-
-    // @media screen and (min-width:415px) and (max-width:425px) {
-    //     max-width:90%;
-    //     margin-top -1.9rem;
-    // }
-
-    // @media screen and (min-width:426px) and (max-width:480px) {
-    //     max-width:90%;
-    //     margin-top -1.9rem;
-    // }
     
     @media screen and (min-width:481px) and (max-width:768px) {
         margin-top 2em;
@@ -135,18 +116,6 @@ const StyledForm = styled.div`
             margin:auto;
         }
 
-        // @media screen and (min-width:321px) and (max-width:414px) {
-        //     max-width:24.31em;
-        //     height:63px;
-        //     margin-left:0em;
-        // }
-
-        // @media screen and (min-width:415px) and (max-width:425px) {
-        //     max-width:18.18rem;
-        //     height:34px;
-        //     margin:auto;
-        // }
-
 
 
         p{
@@ -169,17 +138,6 @@ const StyledForm = styled.div`
                 font-weight:800;
                 font-family: 'Montserrat', sans-serif;
             }
-
-            // @media screen and (min-width:321px) and (max-width:414px) {
-            //     text-align:center;
-            //     font-size: 18px;
-            // }
-
-            // @media screen and (min-width:415px) and (max-width:425px) {
-            //     text-align:center;
-            //     font-size: 15px;
-            //     Line-height:17px;
-            // }
 
             @media (max-width: 480px) {
                 padding-top:35px;
@@ -260,7 +218,7 @@ const StyledForm = styled.div`
 
         .name{
             height:2em;
-            max-width:28rem;
+            width:28rem;
             border-radius:5px;
             background: #E0E0E0;
             border:none;

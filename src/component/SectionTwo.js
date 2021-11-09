@@ -31,7 +31,7 @@ const SectionTwo = () => {
             <div className="contain">
                 <div className="left">
                     <h1>
-                        <br />
+                        
                         In this book, you will discover the most important insights you need to become a 
                         "bloody millionaire" in the tech industry.
                     </h1>
@@ -126,8 +126,10 @@ position:relative;
     margin:auto;
     padding-bottom: 7.4rem;
 
+
     @media (max-width: 480px) {
         padding-bottom: 2rem;
+        margin-top:5rem;
     }
 
     
@@ -165,6 +167,15 @@ position:relative;
                 width:19rem;
                 line-height:24.2px;
                 font-size:18px;
+                padding-top:3rem;
+                margin-left:2rem;
+            }
+
+            @media (max-width: 320px) {
+                width:19rem;
+                line-height:24.2px;
+                font-size:18px;
+                padding-top:9rem;
                 margin-left:2rem;
             }
 
