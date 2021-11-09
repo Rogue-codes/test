@@ -85,7 +85,7 @@ position:relative;
     position:absolute;
     z-index:-10;
     margin-left:38em;
-    margin-top:-9em;
+    margin-top:-10em;
 
     @media screen and (max-width: 480px) {
         height:14rem;
@@ -157,6 +157,7 @@ position:relative;
     position:absolute;
     height:40rem;
     width:50rem;
+    margin-left:38rem;
     // background-color:red;
 
     img{
@@ -245,8 +246,8 @@ position:relative;
 .logo{
     margin-left:3.3rem;
     padding-top:2rem;
-    height:5rem;
-    width:5.3rem;
+    height:7.87rem;
+    width:5.6rem;
     img{
         height:100%;
         width:100%;

@@ -278,10 +278,14 @@ position:relative;
     flex-flow:row wrap;
 
     .right{
+        height:64rem;
         flex:6;
+        // background-color:pink;
+        justify-content:center;
 
         @media (max-width: 480px) {
-            max-width:100%
+            max-width:100%;
+            height:auto;
         }
 
 
@@ -377,8 +381,10 @@ position:relative;
         width:20.1rem;
         height: 2.81rem;
 
+
         @media (max-width: 480px) {
             width:18.1rem;
+            marginbottom:10rem;
         }
 
         @media (min-width: 481px) {
@@ -401,9 +407,10 @@ position:relative;
             }
             }
         }
-    // background-color:red;
+    
     flex:6;
     justify-content:center;
+
     @media (max-width: 480px) {
         max-width:100%;
     }
