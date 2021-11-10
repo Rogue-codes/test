@@ -206,7 +206,7 @@ position:relative;
                 margin-left:2.5rem;
             }
             @media screen and (min-width:1441px){
-                width:85rem;
+                width:110rem;
                 line-height:44.2px;
                 font-size:40px;
             }

@@ -386,7 +386,7 @@ position:relative;
             font-family: 'Montserrat', sans-serif;
             font-weight:800;
             line-height:64.2px;
-            width:20em;
+            width:20em
             margin-left:1em;
             }
         }
