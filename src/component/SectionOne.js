@@ -244,7 +244,7 @@ position:relative;
 }
 
 .logo{
-    margin-left:3.3rem;
+    margin-left:6.3rem;
     padding-top:2rem;
     height:7.87rem;
     width:5.6rem;
@@ -272,13 +272,13 @@ position:relative;
         margin-left:1rem;
     }
     @media screen and (min-width:769px) and (max-width:1024px) {
-        margin-left:1.4rem;
+        margin-left:2.3rem;
     }
     @media screen and (min-width:1025px) and (max-width:1200px) {
-        margin-left:1.5rem;
+        margin-left:2.3rem;
     }
     @media screen and (min-width:1441px){
-        margin-left:1.5rem;
+        margin-left:2.9rem;
     }
 }
 
