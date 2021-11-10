@@ -31,16 +31,17 @@ const SectionTwo = () => {
             <div className="contain">
                 <div className="left">
                     <h1>
-                        
-                        In this book, you will discover the most important insights you need to become a 
-                        "bloody millionaire" in the tech industry.
+                        If you act upon the knowledge in this book consistently over the next 3 - 6 months, 
+                        you will become more valuable with your skills, fast track your career growth in tech, 
+                        earn as much money as you want and enjoy the freedom and fulfillment to do more good to 
+                        yourself and others.
                     </h1>
 
-                    <p>
+                    {/* <p>
                         If you follow the instructions in this book consistently for 3 - 6 months, 
                         you will fast track your career growth in tech, increase your value, and make 
                         more money.
-                    </p>
+                    </p> */}
                 </div>
             </div>
 
@@ -133,7 +134,7 @@ position:relative;
 
     @media (max-width: 480px) {
         padding-bottom: 2rem;
-        margin-top:5rem;
+        margin-top:2rem;
     }
 
     
@@ -175,7 +176,7 @@ position:relative;
             }
 
             @media (max-width: 480px) {
-                width:19.5rem;
+                width:19rem;
                 line-height:24.03px;
                 height:96px;
                 font-size:18px;
@@ -435,21 +436,21 @@ position:relative;
             width:22rem;
             height:2.25em;
             margin-left:1.15em;
-            margin-top: -2.5rem;
+            margin-top: 7.5rem;
         }
 
         @media (max-width: 360px) {
             width:22rem;
             height:2.25em;
             margin-left:.59em;
-            margin-top: -2.5rem;
+            margin-top: 7.5rem;
         }
 
         @media (max-width: 320px) {
             width:19rem;
             height:2.25em;
             margin-left:1.15em;
-            margin-top: -2.5rem;
+            margin-top: 9.5rem;
         }
         
 
@@ -538,7 +539,7 @@ position:relative;
             width:19rem;
             height:2.25em;
             margin-left:1.15em;
-            margin-top: -2.5rem;
+            margin-top: 2.5rem;
         }
 
         

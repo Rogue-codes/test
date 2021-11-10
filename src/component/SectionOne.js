@@ -28,7 +28,7 @@ const SectionOne = () => {
             <div className="container">
                 <div className="left">
                     <h1>
-                        Be among the first <span id='red'>500 people</span>  to pre-order this book and get <span id='red'>60% off</span>.
+                        Be among the first <span id='red'>500 people</span>  to pre-order this book and get <span id='red'>60% off.</span>
                     </h1>
 
                     <div className="pay">
@@ -167,27 +167,43 @@ position:relative;
     }
 
     @media screen and (max-width:320px) {
-        width:22rem;
+        max-width:100%;
         height:20rem;
-        margin-left:-12%;
+        margin-left:-58%;
         margin-top:25.2rem;
+        background-color:red;
 
         img{
             height:100%;
-            width:100%
+            min-width:100%;
+            // display:none;
         }
     }
  
 
     @media screen and (max-width:480px) {
-        max-width:25rem;
+        max-width:100%;
         height:22rem;
-        margin-left:-12%;
+        margin-left:-20%;
         margin-top:25.2rem;
+        // background-color:red;
 
         img{
             height:100%;
-            width:100%
+            min-width:100%;
+        }
+    }
+
+    @media screen and (max-width:360px) {
+        max-width:100%;
+        height:22rem;
+        margin-left:-28%;
+        margin-top:25.2rem;
+        // background-color:red;
+
+        img{
+            height:100%;
+            min-width:100%;
         }
     }
 

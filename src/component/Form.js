@@ -56,7 +56,7 @@ const Form = () => {
         <StyledForm>
             
             <div className="formcontainer" id='reg'>
-            <div className="register"><p>Join the waiting list to be among the first to be notified when the book launch</p></div>
+            <div className="register"><p>Join the waiting list to be among the first <br /> to be notified when the book launch</p></div>
 
             <form name='form' onSubmit={handleSubmit} ref={formRef}>
             <label htmlFor="" className='nameLabel'>Name</label>
@@ -142,7 +142,7 @@ const StyledForm = styled.div`
 
             @media (max-width: 480px) {
                 padding-top:35px;
-                font-size: 14px;
+                font-size: 14.3px;
                 Line-height:20.72px;
                 color:rgba(255, 255, 255, 1);
                 font-weight:600;
