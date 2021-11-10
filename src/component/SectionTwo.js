@@ -55,11 +55,11 @@ const SectionTwo = () => {
 
                     <div className="list">
                         <ul>
-                            <li>The important things you need to know about the tech industry</li>
-                            <li>Tech skills: what you can learn and where to find job opportunities</li>
-                            <li>The biggest opportunity in the tech industry today</li>
-                            <li> How to scale fast and make “Blood Money” with your skills</li>
-                            <li> 7 steps to building a thriving career in the tech industry</li>
+                            <li>The tech industry; what you need to know as a newbie</li>
+                            <li>Why you need to invest yourself into tech immediately</li>
+                            <li>The biggest opportunity in the tech industry today and how to take advantage of it</li>
+                            <li>The 7 MOST IMPORTANT insights you need to thrive in the tech industry</li>
+                            <li>The common challenges you will most likely face and how to deal with it</li>
                         </ul>
                     </div>
 
@@ -73,7 +73,6 @@ const SectionTwo = () => {
                             <li>20% discount off the tuition fee for UIUX design training at Perxels Design School</li>
                             <li>20% discount off the tuition fee for Product Management training at Enoverlab</li>
                             <li>Direct link to an in-depth course on how to make money online as a freelancer</li>
-                            <li>Direct link to a detailed course on how to get good-paying remote jobs from Nigeria</li>
                             <li>Direct link to a detailed course on how to get good-paying remote jobs from Nigeria</li>
                             <li>Direct link to get the most demanded course on Affiliate Marketing - 72IG course</li>
                         </ul>
