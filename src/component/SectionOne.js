@@ -167,16 +167,15 @@ position:relative;
     }
 
     @media screen and (max-width:320px) {
-        max-width:100%;
+        min-width:100%;
         height:20rem;
-        margin-left:-58%;
         margin-top:25.2rem;
-        background-color:red;
+        // display:none;
 
         img{
             height:100%;
             min-width:100%;
-            // display:none;
+            margin-left:-18%;
         }
     }
  

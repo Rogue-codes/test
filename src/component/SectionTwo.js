@@ -56,11 +56,11 @@ const SectionTwo = () => {
 
                     <div className="list">
                         <ul>
-                            <li>The tech industry; what you need to know as a newbie</li>
-                            <li>Why you need to invest yourself into tech immediately</li>
-                            <li>The biggest opportunity in the tech industry today and how to take advantage of it</li>
-                            <li>The 7 MOST IMPORTANT insights you need to thrive in the tech industry</li>
-                            <li>The common challenges you will most likely face and how to deal with it</li>
+                            <li><span id='color'>The tech industry; what you need to know as a newbie</span></li>
+                            <li><span id='color'>Why you need to invest yourself into tech immediately</span></li>
+                            <li><span id='color'>The biggest opportunity in the tech industry today and how to take advantage of it</span></li>
+                            <li><span id='color'>The 7 MOST IMPORTANT insights you need to thrive in the tech industry</span></li>
+                            <li><span id='color'>The common challenges you will most likely face and how to deal with it</span></li>
                         </ul>
                     </div>
 
@@ -70,12 +70,12 @@ const SectionTwo = () => {
 
                     <div className="list">
                         <ul>
-                            <li className='banj'>A free 15 mins consultation call with the author Olabanji Ewenla regarding anything you'd like to find out about the tech industry</li>
-                            <li>20% discount off the tuition fee for UIUX design training at Perxels Design School</li>
-                            <li>20% discount off the tuition fee for Product Management training at Enoverlab</li>
-                            <li>Direct link to an in-depth course on how to make money online as a freelancer</li>
-                            <li>Direct link to a detailed course on how to get good-paying remote jobs from Nigeria</li>
-                            <li>Direct link to get the most demanded course on Affiliate Marketing - 72IG course</li>
+                            <li><span id='color'>A free 15 mins consultation call with the author Olabanji Ewenla regarding anything you'd like to find out about the tech industry</span></li><br /><br />
+                            <li><span id='color'>20% discount off the tuition fee for UIUX design training at Perxels Design School</span></li>
+                            <li><span id='color'>20% discount off the tuition fee for Product Management training at Enoverlab</span></li>
+                            <li><span id='color'>Direct link to an in-depth course on how to make money online as a freelancer</span></li>
+                            <li><span id='color'>Direct link to a detailed course on how to get good-paying remote jobs from Nigeria</span></li>
+                            <li><span id='color'>Direct link to get the most demanded course on Affiliate Marketing - 72IG course</span></li>
                         </ul>
                     </div>
 
@@ -176,7 +176,7 @@ position:relative;
             }
 
             @media (max-width: 480px) {
-                width:19rem;
+                width:20rem;
                 line-height:24.03px;
                 height:96px;
                 font-size:18px;
@@ -378,13 +378,20 @@ position:relative;
     .left{
         .last{
         margin-left:1.8rem;
-        width:20.1rem;
+        width:22.1rem;
         height: 2.81rem;
 
 
         @media (max-width: 480px) {
-            width:18.1rem;
+            width:19.6rem;
             marginbottom:10rem;
+            margin-left:1.2rem;
+        }
+
+        @media (max-width: 320px) {
+            width:19.6rem;
+            marginbottom:10rem;
+            margin-left:.5rem;
         }
 
         @media (min-width: 481px) {
@@ -618,9 +625,9 @@ position:relative;
         margin-top:1.12rem;
 
         @media (max-width: 480px) {
-            width:23rem;
+            width:20rem;
             height:auto;
-            margin-left:-1rem;
+            margin-left:1rem;
             margin-top: 2.1rem;
 
         }
@@ -657,7 +664,7 @@ position:relative;
         }
 
         ul{
-            list-style: none;
+            // list-style: none;
             
 
             li{
@@ -666,8 +673,14 @@ position:relative;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 22px;
-                color: #524C4C;
+                color: red;
+                margin-left:1.2rem;
                 height:4.43em;
+
+                #color{
+                    color: #524C4C;
+                    margin-top: 2.1rem;
+                }
 
                 @media (max-width: 480px) {
                     font-family: Montserrat;
@@ -676,23 +689,26 @@ position:relative;
                     font-size: 17px;
                     line-height: 22px;
                     height:5.06rem;
+                    margin-left:1rem;
                     padding-top:-4em;
         
                 }
 
         }
         .banj{
+            color: #524C4C;
             @media (max-width: 480px) {
-                padding-bottom:40px;
-                padding-top:20px;
+                margin-bottom:80px;
+                // padding-top:20px;
+                background-color;
             }
         }
-        li::before {
-            content: "• ";
-            font-size:40px;
-            color: rgba(205, 42, 68, 1);
-            padding-right:.0em;
-        }
+        // li::before {
+        //     content: "• ";
+        //     font-size:40px;
+        //     color: rgba(205, 42, 68, 1);
+        //     // padding-right:.0em;
+        // }
 
         
     }
