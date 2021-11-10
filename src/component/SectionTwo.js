@@ -114,7 +114,7 @@ position:relative;
     margin-top:-13rem;
 }
 @media (max-width: 360px) {
-    margin-top:-6rem;
+    margin-top:-9rem;
 }
 
 @media screen and (min-width:481px) and (max-width:768px) {}
