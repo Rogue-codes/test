@@ -89,9 +89,9 @@ position:relative;
 
     @media screen and (max-width: 480px) {
         height:14rem;
-        max-width:16rem;
-        margin-left:13.5rem;
-        margin-top:-10em;
+        max-width:19rem;
+        margin-left:8rem;
+        margin-top:-7.5rem;
         // margin-top:15em;
 
         img{
@@ -256,9 +256,9 @@ position:relative;
 
     @media (max-width: 480px) {
         margin-left:2rem;
-        height:7.87rem;
-        width:5.6rem;
-        // background-color:red;
+        height:98px;
+        width:69px;
+        padding-top:1rem;
 
         img{
             height:100%;
